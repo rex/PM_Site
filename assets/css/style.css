@@ -1,0 +1,47 @@
+* {
+	font-family: 'Open Sans', sans-serif;
+}
+body {
+	font-family: 'Open Sans Condensed', sans-serif;
+	background: -webkit-radial-gradient( #EEE , #BBB );
+	min-height: 800px;
+}
+h1,h2,h3,h4,h5 {
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-weight: 300;
+}
+h1.huge_text {
+	font-size: 150px;
+}
+a.logo {
+	font-family: 'Josefin Slab', serif;
+	font-weight: 300;
+	font-size: 70px;
+	letter-spacing: -5px;
+}
+a {
+	color: #222;
+	text-decoration: none;
+	font-family: 'Open Sans Condensed';
+}
+a:hover {
+	color: #222;
+}
+a.btn {
+	display: block;
+	float: left;
+	margin-right: 5px;
+	padding: 16px 30px;
+	background: #ccc;
+	border: 1px #bbb solid;
+	border-radius: 2px;
+	font-size: 24px;
+}
+a.btn:hover {
+	background: #ccc;
+	border: 1px #9c9c9c solid;
+	box-shadow: 0 1px 12px #bbb;
+}
+a.btn:active {
+	box-shadow: 0 1px 1px #bbb;
+}
