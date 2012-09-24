@@ -1,0 +1,114 @@
+// Colors
+@col_high:  #4CC7FF;
+@col_mid: #47B4E0;
+@col_base: #6498B2;
+@col_low: #7D7682;
+@col_dark: #705C54;
+
+@col_dgrey: #222;
+
+// Font Stuff
+.f_general {
+	font-family: 'Open Sans', sans-serif;
+}
+.f_accent {
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-weight: 300;
+}
+.f_header {
+	font-family: 'Josefin Slab', serif;
+	font-weight: 300;
+	letter-spacing: -5px;
+}
+
+// Utility Classes
+.trans (@time) {
+    -webkit-transition: all @time ease-in-out;
+    -moz-transition: all @time ease-in-out;
+    -o-transition: all @time ease-in-out;
+    -ms-transition: all @time ease-in-out;
+    transition: all @time ease-in-out; 
+}
+.transform (@rotate: 90deg, @scale: 1, @skew: 1deg, @translate: 10px) {
+    -webkit-transform: rotate(@rotate) scale(@scale) skew(@skew) translate(@translate);
+	-moz-transform: rotate(@rotate) scale(@scale) skew(@skew) translate(@translate);
+	-o-transform: rotate(@rotate) scale(@scale) skew(@skew) translate(@translate);
+	-ms-transform: rotate(@rotate) scale(@scale) skew(@skew) translate(@translate);
+	transform: rotate(@rotate) scale(@scale) skew(@skew) translate(@translate);
+}
+
+
+// General Classes
+.round (@radius: 3px) {
+	border-radius: @radius;
+	-moz-border-radius: @radius;
+	-webkit-border-radius: @radius;
+	-o-border-radius: @radius;
+}
+.sh_box ( @shadow_1 , @shadow_2: transparent 0 0 0 ) {
+	box-shadow: @shadow_1 , @shadow_2;
+	-moz-box-shadow: @shadow_1 , @shadow_2;
+	-webkit-box-shadow: @shadow_1 , @shadow_2;
+	-o-box-shadow: @shadow_1 , @shadow_2;
+}
+.radial_gradient (@center,@outer) {
+	background: @outer;
+	background: radial-gradient( @center , @outer );
+	background: -moz-radial-gradient( @center , @outer );
+	background: -webkit-radial-gradient( @center , @outer );
+	background: -o-radial-gradient( @center , @outer );
+}
+
+* {
+	.f_accent;
+	.trans( .3s );
+}
+body {
+	.f_accent;
+	.radial_gradient( #EEE , #BBB );
+	min-height: 800px;
+}
+
+// Headers and whatnot
+h1,h2,h3,h4,h5 {
+	.f_accent;
+}
+h1 {
+    &.huge_text {
+        font-size: 80px;
+    }
+}
+a {
+	.f_accent;
+	color: @col_dgrey;
+	text-decoration: none;
+	&:hover {
+		color: lighten( @col_dgrey , 10% );
+	}
+	&.logo {
+		.f_header;
+		font-size: 70px;
+	}
+	&.btn {
+		.f_accent;
+		.round(3px);
+		display: block;
+		float: left;
+		margin-right: 5px;
+		padding: 16px 30px;
+		background: #ccc;
+		border: 1px #bbb solid;
+        font-size: 1.5em;
+		&:hover {
+			border: 1px #9c9c9c solid;
+			.sh_box( 0 2px 12px #bbb, 0 1px 1px #ddd inset );
+		}
+        &:active {
+            .trans( 0s );
+            .sh_box( 0 1px 1px #bbb inset );
+        }
+        &.down {
+            
+        }
+	}
+}

@@ -13,25 +13,15 @@
 
 	<title><?=$title;?> :: Pierce Moore</title>
 
-	<!-- Included CSS Files (Uncompressed) -->
-	<!--
-	<link rel="stylesheet" href="stylesheets/foundation.css">
-	-->
-
-	<!-- Included CSS Files (Compressed) -->
 	<link rel="stylesheet" href="assets/css/foundation.min.css">
-	<link rel="stylesheet" href="assets/css/app.css">
-
-	<script src="assets/js/modernizr.foundation.js"></script>
-	<!-- Included JS Files (Compressed) -->
-	<script src="assets/js/jquery.js"></script>
-	<script src="assets/js/foundation.min.js"></script>
-
-	<!-- Initialize JS Plugins -->
-	<script src="assets/js/app.js"></script>
-
-	<link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+	<!-- <link rel="stylesheet" href="assets/css/style.css" type="text/css"> -->
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,700|Oswald:300|Open+Sans+Condensed:300|Josefin+Slab:300,700' rel='stylesheet' type='text/css'>
+
+	<!-- Included JS Files (Compressed) -->
+	<link rel="stylesheet/less" href="assets/less/styles.less" type="text/css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	<script src="assets/js/unified.js"></script>
+
 
 	<!-- IE Fix for HTML5 Tags -->
 	<!--[if lt IE 9]>
