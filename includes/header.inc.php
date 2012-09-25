@@ -1,3 +1,9 @@
+<?php
+
+$url = "http://localhost/PM_Site";
+
+?>
+
 <!DOCTYPE html>
 
 <!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
@@ -40,16 +46,16 @@
 
 	<div class="seven columns">
 		<br /><br />
-		<a href="#" class="btn">
+		<a href="<?=$url;?>/code" class="btn">
 			Code
 		</a>
-		<a href="#" class="btn">
+		<a href="<?=$url;?>/music/" class="btn">
 			Music
 		</a>
-		<a href="#" class="btn">
+		<a href="<?=$url;?>/portfolio/" class="btn">
 			Portfolio
 		</a>
-		<a href="#" class="btn">
+		<a href="<?=$url;?>/showcase/" class="btn">
 			Showcase
 		</a>
 	</div>

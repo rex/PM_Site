@@ -29,7 +29,7 @@
     -ms-transition: all @time ease-in-out;
     transition: all @time ease-in-out; 
 }
-.transform (@rotate: 90deg, @scale: 1, @skew: 1deg, @translate: 10px) {
+.transform (@rotate: 0deg, @scale: 1, @skew: 0deg, @translate: 0px) {
     -webkit-transform: rotate(@rotate) scale(@scale) skew(@skew) translate(@translate);
 	-moz-transform: rotate(@rotate) scale(@scale) skew(@skew) translate(@translate);
 	-o-transform: rotate(@rotate) scale(@scale) skew(@skew) translate(@translate);
@@ -51,6 +51,17 @@
 	-webkit-box-shadow: @shadow_1 , @shadow_2;
 	-o-box-shadow: @shadow_1 , @shadow_2;
 }
+.linear_gradient (@top, @bottom) {
+	background: @bottom;
+	background: -moz-gradient( linear, left top, left bottom, @top , @bottom );
+	background: -moz-linear-gradient( @top , @bottom );
+	background: -webkit-gradient( linear, left top, left bottom, @top , @bottom );
+	background: -webkit-linear-gradient( @top , @bottom );
+	background: -o-linear-gradient( @top , @bottom );
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=@top, endColorstr=@bottom);
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='@top', endColorstr='@bottom')"; 
+	background: linear-gradient( linear, left top, left bottom, @top , @bottom );
+}
 .radial_gradient (@center,@outer) {
 	background: @outer;
 	background: radial-gradient( @center , @outer );
@@ -65,7 +76,7 @@
 }
 body {
 	.f_accent;
-	.radial_gradient( #EEE , #BBB );
+	.radial_gradient( #EEE , #ddd );
 	min-height: 800px;
 }
 
@@ -96,19 +107,32 @@ a {
 		float: left;
 		margin-right: 5px;
 		padding: 16px 30px;
-		background: #ccc;
-		border: 1px #bbb solid;
+		background: #dcdcdc;
+		border: 1px #999 solid;
         font-size: 1.5em;
+        .sh_box( 0 0 5px #bbb inset );
 		&:hover {
+            .trans( .3s );
 			border: 1px #9c9c9c solid;
 			.sh_box( 0 2px 12px #bbb, 0 1px 1px #ddd inset );
 		}
         &:active {
-            .trans( 0s );
+            .trans( .3s );
             .sh_box( 0 1px 1px #bbb inset );
         }
         &.down {
             
         }
 	}
+}
+
+.box {
+	.round;
+	.sh_box( 0 2px 4px #bbb , 0 1px 1px #ddd inset );
+	padding: 10px 13px;
+	.linear_gradient( #ddd , #ccc );
+	border: 1px #aaa solid;
+	margin-top: 30px;
+	min-height: 70px;
+	text-align: center;
 }
