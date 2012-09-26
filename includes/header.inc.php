@@ -21,7 +21,7 @@ $url = "http://localhost/PM_Site";
 
 	<link rel="stylesheet" href="assets/css/foundation.min.css">
 	<!-- <link rel="stylesheet" href="assets/css/style.css" type="text/css"> -->
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,700|Oswald:300|Open+Sans+Condensed:300|Josefin+Slab:300,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,700|Source+Sans+Pro:900|Open+Sans+Condensed:300|Josefin+Slab:300,700' rel='stylesheet' type='text/css'>
 
 	<!-- Included JS Files (Compressed) -->
 	<link rel="stylesheet/less" href="assets/less/styles.less" type="text/css">
@@ -40,8 +40,8 @@ $url = "http://localhost/PM_Site";
 
 <div class="row">
 	<div class="five columns">
-		<a class="logo" href="#">Pierce Moore</a>
-		<h5 style="margin-top:0;">great code, great food, great music, great company.</h5>
+		<a class="logo" href="<?=$url;?>">Pierce Moore</a>
+		<h5 style="margin-top:0;">Great code, great food, great music, great company.</h5>
 	</div>
 
 	<div class="seven columns">

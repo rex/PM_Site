@@ -17,9 +17,16 @@
 	font-weight: 300;
 }
 .f_header {
-	font-family: 'Josefin Slab', serif;
-	font-weight: 300;
+	font-family: 'Source Sans Pro', serif;
+	font-weight: 700;
 	letter-spacing: -5px;
+}
+.f_block {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 900;
+}
+.f_mono {
+	font-family: 'Droid Sans Mono', sans-serif;
 }
 
 // Utility Classes
@@ -102,8 +109,11 @@ p {
 	&.huge_text {
 		.f_accent;
 		font-size: 80px;
-		letter-spacing: -3px;
+		letter-spacing: -5px;
 	}
+}
+pre {
+	.f_mono;
 }
 a {
 	.f_accent;
@@ -115,7 +125,13 @@ a {
 	}
 	&.logo {
 		.f_header;
-		font-size: 70px;
+		font-size: 60px;
+		color: #222;
+		.sh_text( 0 2px 5px #aaa, 0 -1px 1px #444 );
+		&:hover {
+			color: #999;
+			.sh_text( 0 2px 8px #222, 0 -1px 1px #fff );
+		}
 	}
 	&.btn {
 		.f_accent;
@@ -141,22 +157,38 @@ a {
         &.down {
             
         }
+        &.small {
+
+        	opacity: 0.6;
+        	padding: 12px 19px;
+
+        	&:hover {
+        		opacity: 1;
+        	}
+        }
 	}
+}
+
+header {
+
+}
+
+footer {
+	margin-top: 15px;
 }
 
 #code_is {
 
-	.round;
+	.round(4px);
 	border: 1px #999 solid;
 	.sh_box( 0 4px 20px #888 );
 
 	h1 {
-		.f_general;
-		font-weight: 700;
+		.f_block;
 		font-size: 5em;
-		letter-spacing: -5px;
+		letter-spacing: -6px;
 		color: #ccc;
-		.sh_text(  0 -1px 2px #fff, 0 1px 4px #222)
+		.sh_text(  0 -1px 2px #fff, 0 1px 4px #222);
 	}
 
 	div {
@@ -175,10 +207,5 @@ a {
 .box {
 	.round;
 	.sh_box( 0 2px 4px #bbb , 0 1px 1px #ddd inset );
-	padding: 10px 13px;
-	.linear_gradient( #ddd , #ccc );
-	border: 1px #aaa solid;
-	margin-top: 30px;
-	min-height: 70px;
-	text-align: center;
+
 }
