@@ -742,6 +742,7 @@
         //
         // Trigger the modal 'close' event.
         //
+        _gaq.push(['_trackEvent', 'Modal', 'Close', 'Button']);
         modal.trigger( 'reveal:close' );
 
       });
@@ -763,6 +764,7 @@
         //
         // Trigger the modal 'close' event.
         //
+        _gaq.push(['_trackEvent', 'Modal', 'Close', 'Background']);
         modal.trigger( 'reveal:close' );
 
       });
@@ -782,6 +784,7 @@
          // Escape key was triggered.
          // Trigger the modal 'close' event.
          //
+        _gaq.push(['_trackEvent', 'Modal', 'Close', 'Escape']);
          modal.trigger( 'reveal:close' );
        }
 
