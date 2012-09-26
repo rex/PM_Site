@@ -21,7 +21,7 @@ $url = "http://localhost/PM_Site";
 
 	<link rel="stylesheet" href="assets/css/foundation.min.css">
 	<!-- <link rel="stylesheet" href="assets/css/style.css" type="text/css"> -->
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,700|Source+Sans+Pro:900|Open+Sans+Condensed:300|Josefin+Slab:300,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,700|Oxygen+Mono|Source+Sans+Pro:900|Open+Sans+Condensed:300|Josefin+Slab:300,700' rel='stylesheet' type='text/css'>
 
 	<!-- Included JS Files (Compressed) -->
 	<link rel="stylesheet/less" href="assets/less/styles.less" type="text/css">
@@ -37,6 +37,9 @@ $url = "http://localhost/PM_Site";
 </head>
 <body>
 
+<a href="<?=$url;?>/resume" id="hire_me">
+	<h1>Hire Me!</h1>
+</a>
 
 <div class="row">
 	<div class="five columns">

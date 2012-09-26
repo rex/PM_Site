@@ -26,7 +26,7 @@
 	font-weight: 900;
 }
 .f_mono {
-	font-family: 'Droid Sans Mono', sans-serif;
+	font-family: 'Oxygen Mono', sans-serif;
 }
 
 // Utility Classes
@@ -85,7 +85,7 @@
 }
 
 * {
-	.f_accent;
+	//.f_accent;
 }
 body {
 	.f_accent;
@@ -93,6 +93,29 @@ body {
 	.radial_gradient( #EEE , #ddd );
 	min-height: 800px;
 }
+#hire_me {
+	position: fixed;
+	top: -1px;
+	right: -1px;
+	padding: 20px;
+	min-width: 150px;
+	min-height: 80px;
+	//.linear_gradient( @col_base , @col_mid );
+	background: @col_dark;
+	//border: 1px #eee solid;
+	.sh_box( 0 0 10px #222 inset );
+	.trans( 1s );
+	h1 {
+		color: #ccc;
+		.f_header;
+		.sh_text( 0 2px 5px #222 , 0 -1px 1px #fff );
+	}
+	&:hover {
+		//border: 1px #222 solid;
+		.sh_box( 0 3px 10px #222 , 0 1px 1px #eee inset );
+	}
+}
+
 // Headers and whatnot
 h1,h2,h3,h4,h5 {
 	.f_accent;
@@ -177,7 +200,7 @@ footer {
 	margin-top: 15px;
 }
 
-#code_is {
+#slider {
 
 	.round(4px);
 	border: 1px #999 solid;
@@ -207,5 +230,21 @@ footer {
 .box {
 	.round;
 	.sh_box( 0 2px 4px #bbb , 0 1px 1px #ddd inset );
+
+}
+
+.expandable {
+	h1 {
+		color: #eee;
+		.sh_text( 0 1px 4px #222 );
+	}
+	.f_general;
+	.round;
+	.linear_gradient( @col_base , @col_mid );
+	.sh_box( 0 1px 1px @col_high inset , 0 4px 15px #aaa );
+	padding: 5px 1%;
+	width: 98%;
+	text-align: left;
+	margin-bottom: 10px;
 
 }

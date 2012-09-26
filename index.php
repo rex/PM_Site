@@ -5,7 +5,7 @@ include( 'includes/header.inc.php' ); ?>
 
 <script>
 $(window).load( function() {
-	$("#code_is").orbit({
+	$("#slider").orbit({
 		fluid: 		'16x6',
 		captions: 	true,
 		captionAnimation: 		'fade',
@@ -28,7 +28,7 @@ $(window).load( function() {
 
 <div class="row">
 	<div class="twelve columns">
-		<div id="code_is">
+		<div id="slider">
 
 			<div>
 				<h1>Beautiful.</h1>
