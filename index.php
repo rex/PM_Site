@@ -6,7 +6,6 @@ include( 'includes/header.inc.php' ); ?>
 <script>
 $(window).load( function() {
 	$("#code_is").orbit({
-		bullets: 	true,
 		fluid: 		'16x6',
 		captions: 	true,
 		captionAnimation: 		'fade',
