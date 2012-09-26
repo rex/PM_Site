@@ -49,13 +49,13 @@ $url = "http://localhost/PM_Site";
 		<a href="<?=$url;?>/code" class="btn">
 			Code
 		</a>
-		<a href="<?=$url;?>/music/" class="btn">
+		<a href="<?=$url;?>/music" class="btn">
 			Music
 		</a>
-		<a href="<?=$url;?>/portfolio/" class="btn">
+		<a href="<?=$url;?>/portfolio" class="btn">
 			Portfolio
 		</a>
-		<a href="<?=$url;?>/showcase/" class="btn">
+		<a href="<?=$url;?>/showcase" class="btn">
 			Showcase
 		</a>
 	</div>

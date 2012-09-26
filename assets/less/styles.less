@@ -10,6 +10,7 @@
 // Font Stuff
 .f_general {
 	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
 }
 .f_accent {
 	font-family: 'Open Sans Condensed', sans-serif;
@@ -51,6 +52,12 @@
 	-webkit-box-shadow: @shadow_1 , @shadow_2;
 	-o-box-shadow: @shadow_1 , @shadow_2;
 }
+.sh_text ( @shadow_1 , @shadow_2: transparent 0 0 0 ) {
+	text-shadow: @shadow_1 , @shadow_2;
+	-moz-text-shadow: @shadow_1 , @shadow_2;
+	-webkit-text-shadow: @shadow_1 , @shadow_2;
+	-o-text-shadow: @shadow_1 , @shadow_2;
+}
 .linear_gradient (@top, @bottom) {
 	background: @bottom;
 	background: -moz-gradient( linear, left top, left bottom, @top , @bottom );
@@ -72,27 +79,37 @@
 
 * {
 	.f_accent;
-	.trans( .3s );
 }
 body {
 	.f_accent;
+	font-size: 20px;
 	.radial_gradient( #EEE , #ddd );
 	min-height: 800px;
 }
-
 // Headers and whatnot
 h1,h2,h3,h4,h5 {
 	.f_accent;
 }
 h1 {
-    &.huge_text {
-        font-size: 80px;
-    }
+    // &.huge_text {
+    //     font-size: 80px;
+    // }
+}
+p {
+	.f_general;
+	font-size: 1.5em;
+
+	&.huge_text {
+		.f_accent;
+		font-size: 80px;
+		letter-spacing: -3px;
+	}
 }
 a {
 	.f_accent;
 	color: @col_dgrey;
 	text-decoration: none;
+	.trans( .3s );
 	&:hover {
 		color: lighten( @col_dgrey , 10% );
 	}
@@ -107,23 +124,52 @@ a {
 		float: left;
 		margin-right: 5px;
 		padding: 16px 30px;
-		background: #dcdcdc;
-		border: 1px #999 solid;
+		background: #ccc;
+		border: 1px #aaa solid;
         font-size: 1.5em;
-        .sh_box( 0 0 5px #bbb inset );
+        //.sh_box( 0 0 5px #bbb inset );
 		&:hover {
             .trans( .3s );
 			border: 1px #9c9c9c solid;
-			.sh_box( 0 2px 12px #bbb, 0 1px 1px #ddd inset );
+			background: #ccc;
+			.sh_box( 0 2px 12px #bbb, 0 1px 1px #eee inset );
 		}
         &:active {
             .trans( .3s );
-            .sh_box( 0 1px 1px #bbb inset );
+            .sh_box( 0 0px 2px #999 inset );
         }
         &.down {
             
         }
 	}
+}
+
+#code_is {
+
+	.round;
+	border: 1px #999 solid;
+	.sh_box( 0 4px 20px #888 );
+
+	h1 {
+		.f_general;
+		font-weight: 700;
+		font-size: 5em;
+		letter-spacing: -5px;
+		color: #ccc;
+		.sh_text(  0 -1px 2px #fff, 0 1px 4px #222)
+	}
+
+	div {
+		.linear_gradient( @col_base , @col_mid );
+		.sh_box( 0 1px 1px @col_high inset );
+		width: 940px;
+		height: 400px;
+		//background: #ccc;
+		padding: 40px;
+		text-align: center;
+		font-size: 20px;
+	}
+
 }
 
 .box {
