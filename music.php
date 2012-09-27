@@ -69,6 +69,42 @@ include( 'includes/header.inc.php' ); ?>
 	<a class="close-reveal-modal normal alert button"> </a>
 </div>
 
+<div id="spotify_1" class="hidden reveal-modal large music spotify" style="min-height: 380px;">
+	<h1>Spotify <a href="http://open.spotify.com/user/piercemoore" target="_blank" class="small round success button">My Spotify Profile</a></h1>
+
+	<h3>Pierce's Defining Playlist</h3>
+<iframe src="https://embed.spotify.com/?uri=spotify:user:piercemoore:playlist:3QNfNRKFzQ4UMOcpdw0zum" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+
+	<a href="#" data-reveal-id="spotify" class="large button" style="float: right;"><< Back to List</a>
+	</div>
+
+<div id="spotify_2" class="hidden reveal-modal large music spotify" style="min-height: 380px;">
+	<h1>Spotify <a href="http://open.spotify.com/user/piercemoore" target="_blank" class="small round success button">My Spotify Profile</a></h1>
+
+	<h3>Chillout Playlist</h3>
+<iframe src="https://embed.spotify.com/?uri=spotify:user:piercemoore:playlist:7EOiUXfkXj8GmC8LAQmPRM" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+
+	<a href="#" data-reveal-id="spotify" class="large button" style="float: right;"><< Back to List</a>
+</div>
+
+<div id="spotify_3" class="hidden reveal-modal large music spotify" style="min-height: 380px;">
+	<h1>Spotify <a href="http://open.spotify.com/user/piercemoore" target="_blank" class="small round success button">My Spotify Profile</a></h1>
+
+	<h3>Chillgrim ( Epic Chill Playlist )</h3>
+<iframe src="https://embed.spotify.com/?uri=spotify:user:piercemoore:playlist:0gixIhLYC54z2V0mhWIjyC" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+
+	<a href="#" data-reveal-id="spotify" class="large button" style="float: right;"><< Back to List</a>
+</div>
+
+<div id="spotify_4" class="hidden reveal-modal large music spotify" style="min-height: 380px;">
+	<h1>Spotify <a href="http://open.spotify.com/user/piercemoore" target="_blank" class="small round success button">My Spotify Profile</a></h1>
+
+	<h3>Experiments in Ambience</h3>
+	<iframe src="https://embed.spotify.com/?uri=spotify:album:3q11vSyKVDFostf8Kupgcs&theme=white" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>	<a class="close-reveal-modal normal alert button"> </a>
+
+	<a href="#" data-reveal-id="spotify" class="large button" style="float: right;"><< Back to List</a>
+</div>
+
 <div class="row">
 
 	<p class="huge_text" style="text-align:center;">
@@ -101,12 +137,12 @@ include( 'includes/header.inc.php' ); ?>
 			<img src="<?=$url;?>/assets/images/icons/itunes_xxl.png" />
 		</a>
 
-		<a href="https://play.google.com/store/music/album/Pierce_Moore_Experiments_in_Ambience?id=Bfjewjwc2f6bld2g42fnzmapr6m" target="_blank" alt="Buy on Google Play" title="Buy on Google Play">
+		<a href="https://play.google.com/store/music/album/Pierce_Moore_Experiments_in_Ambience?id=Bfjewjwc2f6bld2g42fnzmapr6m" class="music_link" target="_blank" alt="Buy on Google Play" title="Buy on Google Play">
 			<img src="<?=$url;?>/assets/images/icons/buy-googleplay.png" />
 		</a>
 
 	</div>
 
 </div>
-
+<br /><br />
 <?php include( 'includes/footer.inc.php' ); ?>
