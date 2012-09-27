@@ -28,7 +28,7 @@
 				<a href="https://twitter.com/KiaPierce" class="btn small" alt="Follow me on Twitter" title="Follow me on Twitter" target="_blank">
 					<img src="<?=$url;?>/assets/images/icons/twitter.png" />
 				</a>
-				<a href="https://www.facebook.com/thepiercedude" class="btn small" alt="Creep me on Facebook" title="Creep me on Facebook" target="_blank">
+				<a href="https://www.facebook.com/mrpiercemoore" class="btn small" alt="Creep me on Facebook" title="Creep me on Facebook" target="_blank">
 					<img src="<?=$url;?>/assets/images/icons/facebook.png" />
 				</a>
 				<a href="https://plus.google.com/110968366995778453274/about" class="btn small" alt="Check out my Google+ Profile" title="Check out my Google+ Profile" target="_blank">
