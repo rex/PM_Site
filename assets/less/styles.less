@@ -117,9 +117,13 @@ h1,h2,h3,h4,h5 {
 	.f_accent;
 }
 h1 {
-    // &.huge_text {
-    //     font-size: 80px;
-    // }
+	&.styled {
+		.f_block;
+		color: #ccc;
+		.sh_text( 0 1px 3px #777, 0 -1px 1px #eee );
+		letter-spacing: -2px;
+		margin: 0;
+	}
 }
 p {
 	.f_general;
@@ -157,7 +161,7 @@ a {
 		.round(3px);
 		display: block;
 		float: left;
-		margin-right: 5px;
+		margin: auto 5px 5px auto;
 		padding: 16px 30px;
 		background: #ccc;
 		border: 1px #aaa solid;
@@ -189,8 +193,20 @@ a {
         	font-size: 1.2em;
         }
 	}
+	&.music_link {
+		opacity: 0.50;
+		img {
+			width: auto;
+			height: 150px;
+		}
+		&:hover {
+			opacity: 1;
+		}
+	}
 }
 button,.button {
+	margin-right: 5px;
+	margin-bottom: 5px;
 	.f_general;
 }
 footer {
