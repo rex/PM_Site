@@ -116,12 +116,18 @@ body {
 h1,h2,h3,h4,h5 {
 	.f_accent;
 }
-h1 {
+h1,h2,h3,h4 {
 	&.styled {
 		.f_block;
 		color: #ccc;
 		.sh_text( 0 1px 3px #777, 0 -1px 1px #eee );
 		letter-spacing: -2px;
+		margin: 0;
+	}
+	&.contrast {
+		.f_block;
+		color:#eee;
+		.sh_text( 0 1px 6px #000, 0 -1px 1px #fff );
 		margin: 0;
 	}
 }
