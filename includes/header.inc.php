@@ -1,6 +1,7 @@
 <?php
 
 $url = "http://localhost/PM_Site";
+$page = str_replace( "/PM_Site/" , "" , $_SERVER['REQUEST_URI'] );
 
 ?>
 
@@ -49,16 +50,16 @@ $url = "http://localhost/PM_Site";
 
 	<div class="seven columns">
 		<br /><br />
-		<a href="<?=$url;?>/code" class="btn">
+		<a href="<?=$url;?>/code" class="btn <?=($page=='code') ? 'down' : null ;?>">
 			Code
 		</a>
-		<a href="<?=$url;?>/music" class="btn">
+		<a href="<?=$url;?>/music" class="btn <?=($page=='music') ? 'down' : null ;?>">
 			Music
 		</a>
-		<a href="<?=$url;?>/portfolio" class="btn">
+		<a href="<?=$url;?>/portfolio" class="btn <?=($page=='portfolio') ? 'down' : null ;?>">
 			Portfolio
 		</a>
-		<a href="<?=$url;?>/showcase" class="btn">
+		<a href="<?=$url;?>/showcase" class="btn <?=($page=='showcase') ? 'down' : null ;?>">
 			Showcase
 		</a>
 	</div>
