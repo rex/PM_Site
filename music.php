@@ -27,7 +27,7 @@ include( 'includes/header.inc.php' ); ?>
 	<h2>Trance Heat 001 <a href="http://www.mixcloud.com/piercemoore/" target="_blank" class="small round secondary button">My MixCloud Profile</a></h2>
 	<div><object width="100%" height="125"><param name="movie" value="//www.mixcloud.com/media/swf/player/mixcloudLoader.swf?feed=http%3A%2F%2Fwww.mixcloud.com%2Fpiercemoore%2Fpierce-moore-trance-heat-001-03232012%2F&embed_uuid=51cd06f4-8416-4957-9c7a-f1539c595a11&stylecolor=&embed_type=widget_standard"></param><param name="allowFullScreen" value="true"></param><param name="wmode" value="opaque"></param><param name="allowscriptaccess" value="always"></param><embed src="//www.mixcloud.com/media/swf/player/mixcloudLoader.swf?feed=http%3A%2F%2Fwww.mixcloud.com%2Fpiercemoore%2Fpierce-moore-trance-heat-001-03232012%2F&embed_uuid=51cd06f4-8416-4957-9c7a-f1539c595a11&stylecolor=&embed_type=widget_standard" type="application/x-shockwave-flash" wmode="opaque" allowscriptaccess="always" allowfullscreen="true" width="100%" height="125"></embed></object><div style="clear:both; height:3px;"></div><p style="display:block; font-size:12px; font-family:Helvetica, Arial, sans-serif; margin:0; padding: 3px 4px; color:#02a0c7;"><a href="http://www.mixcloud.com/piercemoore/pierce-moore-trance-heat-001-03232012/?utm_source=widget&amp;utm_medium=web&amp;utm_campaign=base_links&amp;utm_term=resource_link" target="_blank" style="color:#02a0c7; font-weight:bold;">Pierce Moore - Trance Heat 001 - 03/23/2012</a><span> by </span><a href="http://www.mixcloud.com/piercemoore/?utm_source=widget&amp;utm_medium=web&amp;utm_campaign=base_links&amp;utm_term=profile_link" target="_blank" style="color:#02a0c7; font-weight:bold;">Pierce Moore</a><span> on </span><a href="http://www.mixcloud.com/?utm_source=widget&utm_medium=web&utm_campaign=base_links&utm_term=homepage_link" target="_blank" style="color:#02a0c7; font-weight:bold;"> Mixcloud</a></p><div style="clear:both; height:3px;"></div></div>
 	
-	<a href="#" data-reveal-id="mixcloud" class="large button" style="float: right;"><< Back to Mix List</a>
+	<a href="#" data-reveal-id="mixcloud" class="large button" style="float: left;"><< Back to Mix List</a>
 	<a class="close-reveal-modal normal alert button"> </a>
 </div>
 
@@ -35,7 +35,7 @@ include( 'includes/header.inc.php' ); ?>
 	<h2>Musings 02 <a href="http://www.mixcloud.com/piercemoore/" target="_blank" class="small round secondary button">My MixCloud Profile</a></h2>
 	<div><object width="100%" height="120"><param name="movie" value="//www.mixcloud.com/media/swf/player/mixcloudLoader.swf?feed=http%3A%2F%2Fwww.mixcloud.com%2Fpiercemoore%2Fpierce-moore-musings-02-02252012%2F&embed_uuid=c313646f-44ce-40e7-80cd-fda7dee1faea&stylecolor=&embed_type=widget_standard"></param><param name="allowFullScreen" value="true"></param><param name="wmode" value="opaque"></param><param name="allowscriptaccess" value="always"></param><embed src="//www.mixcloud.com/media/swf/player/mixcloudLoader.swf?feed=http%3A%2F%2Fwww.mixcloud.com%2Fpiercemoore%2Fpierce-moore-musings-02-02252012%2F&embed_uuid=c313646f-44ce-40e7-80cd-fda7dee1faea&stylecolor=&embed_type=widget_standard" type="application/x-shockwave-flash" wmode="opaque" allowscriptaccess="always" allowfullscreen="true" width="100%" height="120"></embed></object><div style="clear:both; height:3px;"></div><p style="display:block; font-size:12px; font-family:Helvetica, Arial, sans-serif; margin:0; padding: 3px 4px; color:#02a0c7;"><a href="http://www.mixcloud.com/piercemoore/pierce-moore-musings-02-02252012/?utm_source=widget&amp;utm_medium=web&amp;utm_campaign=base_links&amp;utm_term=resource_link" target="_blank" style="color:#02a0c7; font-weight:bold;">Pierce Moore - Musings 02 - 02/25/2012  </a><span> by </span><a href="http://www.mixcloud.com/piercemoore/?utm_source=widget&amp;utm_medium=web&amp;utm_campaign=base_links&amp;utm_term=profile_link" target="_blank" style="color:#02a0c7; font-weight:bold;">Pierce Moore</a><span> on </span><a href="http://www.mixcloud.com/?utm_source=widget&utm_medium=web&utm_campaign=base_links&utm_term=homepage_link" target="_blank" style="color:#02a0c7; font-weight:bold;"> Mixcloud</a></p><div style="clear:both; height:3px;"></div></div>
 	
-	<a href="#" data-reveal-id="mixcloud" class="large button" style="float: right;"><< Back to Mix List</a>
+	<a href="#" data-reveal-id="mixcloud" class="large button" style="float: left;"><< Back to Mix List</a>
 	<a class="close-reveal-modal normal alert button"> </a>
 </div>
 
@@ -43,7 +43,7 @@ include( 'includes/header.inc.php' ); ?>
 	<h2>Musings 01 <a href="http://www.mixcloud.com/piercemoore/"  target="_blank" class="small round secondary button">My MixCloud Profile</a></h2>	
 	<div><object width="100%" height="120"><param name="movie" value="//www.mixcloud.com/media/swf/player/mixcloudLoader.swf?feed=http%3A%2F%2Fwww.mixcloud.com%2Fpiercemoore%2Fpierce-moore-musings-01-01112012%2F&embed_uuid=0468eb30-66cd-4450-b924-329cd2546092&stylecolor=&embed_type=widget_standard"></param><param name="allowFullScreen" value="true"></param><param name="wmode" value="opaque"></param><param name="allowscriptaccess" value="always"></param><embed src="//www.mixcloud.com/media/swf/player/mixcloudLoader.swf?feed=http%3A%2F%2Fwww.mixcloud.com%2Fpiercemoore%2Fpierce-moore-musings-01-01112012%2F&embed_uuid=0468eb30-66cd-4450-b924-329cd2546092&stylecolor=&embed_type=widget_standard" type="application/x-shockwave-flash" wmode="opaque" allowscriptaccess="always" allowfullscreen="true" width="100%" height="120"></embed></object><div style="clear:both; height:3px;"></div><p style="display:block; font-size:12px; font-family:Helvetica, Arial, sans-serif; margin:0; padding: 3px 4px; color:#02a0c7;"><a href="http://www.mixcloud.com/piercemoore/pierce-moore-musings-01-01112012/?utm_source=widget&amp;utm_medium=web&amp;utm_campaign=base_links&amp;utm_term=resource_link" target="_blank" style="color:#02a0c7; font-weight:bold;">Pierce Moore - Musings 01 - 01/11/2012</a><span> by </span><a href="http://www.mixcloud.com/piercemoore/?utm_source=widget&amp;utm_medium=web&amp;utm_campaign=base_links&amp;utm_term=profile_link" target="_blank" style="color:#02a0c7; font-weight:bold;">Pierce Moore</a><span> on </span><a href="http://www.mixcloud.com/?utm_source=widget&utm_medium=web&utm_campaign=base_links&utm_term=homepage_link" target="_blank" style="color:#02a0c7; font-weight:bold;"> Mixcloud</a></p><div style="clear:both; height:3px;"></div></div>
 	
-	<a href="#" data-reveal-id="mixcloud" class="large button" style="float: right;"><< Back to Mix List</a>
+	<a href="#" data-reveal-id="mixcloud" class="large button" style="float: left;"><< Back to Mix List</a>
 	<a class="close-reveal-modal normal alert button"> </a>
 </div>
 
@@ -75,7 +75,7 @@ include( 'includes/header.inc.php' ); ?>
 	<h3>Pierce's Defining Playlist</h3>
 <iframe src="https://embed.spotify.com/?uri=spotify:user:piercemoore:playlist:3QNfNRKFzQ4UMOcpdw0zum" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
 
-	<a href="#" data-reveal-id="spotify" class="large button" style="float: right;"><< Back to List</a>
+	<a href="#" data-reveal-id="spotify" class="large button" style="float: left;"><< Back to List</a>
 	</div>
 
 <div id="spotify_2" class="hidden reveal-modal large music spotify" style="min-height: 380px;">
@@ -84,7 +84,7 @@ include( 'includes/header.inc.php' ); ?>
 	<h3>Chillout Playlist</h3>
 <iframe src="https://embed.spotify.com/?uri=spotify:user:piercemoore:playlist:7EOiUXfkXj8GmC8LAQmPRM" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
 
-	<a href="#" data-reveal-id="spotify" class="large button" style="float: right;"><< Back to List</a>
+	<a href="#" data-reveal-id="spotify" class="large button" style="float: left;"><< Back to List</a>
 </div>
 
 <div id="spotify_3" class="hidden reveal-modal large music spotify" style="min-height: 380px;">
@@ -93,7 +93,7 @@ include( 'includes/header.inc.php' ); ?>
 	<h3>Chillgrim ( Epic Chill Playlist )</h3>
 <iframe src="https://embed.spotify.com/?uri=spotify:user:piercemoore:playlist:0gixIhLYC54z2V0mhWIjyC" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
 
-	<a href="#" data-reveal-id="spotify" class="large button" style="float: right;"><< Back to List</a>
+	<a href="#" data-reveal-id="spotify" class="large button" style="float: left;"><< Back to List</a>
 </div>
 
 <div id="spotify_4" class="hidden reveal-modal large music spotify" style="min-height: 380px;">
@@ -102,7 +102,7 @@ include( 'includes/header.inc.php' ); ?>
 	<h3>Experiments in Ambience</h3>
 	<iframe src="https://embed.spotify.com/?uri=spotify:album:3q11vSyKVDFostf8Kupgcs&theme=white" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>	<a class="close-reveal-modal normal alert button"> </a>
 
-	<a href="#" data-reveal-id="spotify" class="large button" style="float: right;"><< Back to List</a>
+	<a href="#" data-reveal-id="spotify" class="large button" style="float: left;"><< Back to List</a>
 </div>
 
 <div class="row">

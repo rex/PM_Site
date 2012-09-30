@@ -7,9 +7,20 @@
 
 @col_dgrey: #222;
 
+@font-face {
+  font-family: 'Segoe';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Segoe UI Light'), local('SegoeUI-Light'), url('../fonts/segoe/SegoeWP-Light.woff') format('woff');
+}
+
 // Font Stuff
 .f_general {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Segoe', sans-serif;
+	font-weight: 300;
+}
+.f_open {
+	font-family: "Open Sans", sans-serif;
 	font-weight: 300;
 }
 .f_accent {
@@ -148,7 +159,7 @@ a {
 	.f_accent;
 	color: @col_dgrey;
 	text-decoration: none;
-	.trans( .3s );
+	//.trans( .3s );
 	&:hover {
 		color: lighten( @col_dgrey , 10% );
 	}
@@ -216,7 +227,8 @@ button,.button {
 	.f_general;
 }
 footer {
-	margin-top: 15px;
+	clear: both;
+	margin-top: 35px;
 }
 
 #slider {
@@ -257,5 +269,41 @@ footer {
 	}
 	&.soundcloud {
 		background: url('../images/icons/soundcloud_xxl.png' ) right bottom no-repeat #ccc;
+	}
+}
+#resume {
+	.f_general;
+	p {
+		margin-bottom: 10px;
+		font-size: 2em;
+		letter-spacing: -2px;
+		line-height: 110%;
+		&.section_title {
+			.f_general;
+			font-size: 3.5em;
+			letter-spacing: -3px;
+		}
+		&.heading {
+			.f_header;
+			line-height: 100%;
+			font-size: 4em;
+			margin: 0;
+		}
+		&.subheading {
+			.f_general;
+			line-height: 100%;
+			font-size: 3.5em;
+		}
+	}
+	ul {
+		li {
+			font-size: 1.5em;
+		}
+	}
+}
+
+ul {
+	&.nav-bar {
+		background: #333;
 	}
 }
