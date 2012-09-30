@@ -167,13 +167,14 @@ a {
 		color: lighten( @col_dgrey , 10% );
 	}
 	&.logo {
-		.f_header;
-		font-size: 60px;
+		font-family: Segoe;
+		font-size: 3.3em;
+		letter-spacing: -2px;
 		color: #222;
-		.sh_text( 0 2px 5px #aaa, 0 -1px 1px #444 );
+		//.sh_text( 0 2px 5px #aaa, 0 -1px 1px #444 );
 		&:hover {
-			color: #999;
-			.sh_text( 0 2px 8px #222, 0 -1px 1px #fff );
+			color: #eee;
+			.sh_text( 0 1px 3px #000 );
 		}
 	}
 	&.btn {
@@ -278,29 +279,29 @@ footer {
 	.f_general;
 	p {
 		margin-bottom: 10px;
-		font-size: 2em;
+		font-size: 1.5em;
 		letter-spacing: -1px;
 		line-height: 110%;
 		&.section_title {
 			.f_general;
-			font-size: 4.5em;
+			font-size: 3.5em;
 			letter-spacing: -3px;
 		}
 		&.heading {
 			.f_header;
 			line-height: 100%;
-			font-size: 4em;
+			font-size: 3em;
 			margin: 0;
 		}
 		&.subheading {
 			.f_general;
 			line-height: 100%;
-			font-size: 3.5em;
+			font-size: 2.5em;
 		}
 	}
 	ul {
 		li {
-			font-size: 1.5em;
+			font-size: 1.2em;
 		}
 	}
 	section {
@@ -311,5 +312,19 @@ footer {
 ul {
 	&.nav-bar {
 		background: #333;
+
+		a {
+			&:hover {
+				background: #2BA6CB;
+			}
+			&:active {
+				background: darken( #2BA6CB, 15% );
+			}
+		}
+		li {
+			&.down {
+				background: darken( #2BA6CB, 15% );
+			}
+		}
 	}
 }

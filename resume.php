@@ -17,7 +17,7 @@ include( 'includes/header.inc.php' ); ?>
 			<li class="active"><a href="#objective">Objective</a></li>
 			<li class="has-flyout">
 				<a href="#experience">Experience</a>
-				<a href="#" class="flyout-toggle"><span></span></a>
+				<!-- <a href="#" class="flyout-toggle"><span></span></a> -->
 				<ul class="flyout">
 					<li><a href="#job_latimundo">Latimundo</a></li>
 					<li><a href="#job_zeeway">Zee-Way</a></li>
@@ -28,7 +28,7 @@ include( 'includes/header.inc.php' ); ?>
 			</li>
 			<li class="has-flyout">
 				<a href="#certifications">Certifications</a>
-				<a href="#" class="flyout-toggle"><span></span></a>
+				<!-- <a href="#" class="flyout-toggle"><span></span></a> -->
 				<ul class="flyout">
 					<li><a href="#certs_cisco">Cisco</a></li>
 					<li><a href="#certs_comptia">CompTIA</a></li>
@@ -37,7 +37,7 @@ include( 'includes/header.inc.php' ); ?>
 			<li><a href="#portfolio">Portfolio</a>
 			<li class="has-flyout">
 				<a href="#skills">Training / Skills</a>
-				<a href="#" class="flyout-toggle"><span></span></a>
+				<!-- <a href="#" class="flyout-toggle"><span></span></a> -->
 				<ul class="flyout">
 					<li><a href="#skill_software">Software</a></li>
 					<li><a href="#skill_programming">Programming Languages</a></li>

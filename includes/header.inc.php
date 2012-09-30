@@ -1,7 +1,7 @@
 <?php
 
 $url = "http://localhost/PM_Site";
-$page = str_replace( "/PM_Site/" , "" , $_SERVER['REQUEST_URI'] );
+$page = strtolower( str_replace( "/PM_Site/" , "" , $_SERVER['REQUEST_URI'] ) );
 
 ?>
 
@@ -38,16 +38,40 @@ $page = str_replace( "/PM_Site/" , "" , $_SERVER['REQUEST_URI'] );
 </head>
 <body>
 
-<a href="<?=$url;?>/resume" id="hire_me">
+<!-- <a href="<?=$url;?>/resume" id="hire_me">
 	<h1>Hire Me!</h1>
-</a>
+</a> -->
 
 <div class="row">
 	<div class="five columns">
-		<a class="logo" href="<?=$url;?>">Pierce Moore</a>
-		<h5 style="margin-top:0;">Great code, great food, great music, great company.</h5>
+		<a class="logo" href="<?=$url;?>">PIERCE MOORE</a>
+		<p style="font-family: 'Open Sans Condensed';font-size: 1.4em;letter-spacing: -1px;">Great code, great food, great music, great company.</p>
 	</div>
 
+	<div class="seven columns">
+		<ul class="nav-bar">
+			<li class="<?=($page=='code') ? 'active' : null ;?>"><a href="#">Code</a></li>
+			<li class="<?=($page=='music') ? 'active' : null ;?>"><a href="#">Music</a></li>
+			<li class="<?=($page=='portfolio') ? 'active' : null ;?>"><a href="#">Portfolio</a></li>
+			<li class="<?=($page=='showcase') ? 'active' : null ;?>"><a href="#">Showcase</a></li>
+			<li class="<?=($page=='resume') ? 'active' : null ;?>" class="has-flyout">
+				<a href="<?=$url;?>/resume">Resume</a>
+				<!-- <a href="#" class="flyout-toggle"><span> </span></a> -->
+				<?php if( $page != 'resume' ): ?>
+				<ul class="flyout">
+					<li><a href="#">Objective</a></li>
+					<li><a href="#">Experience</a></li>
+					<li><a href="#">Certifications</a></li>
+					<li><a href="#">Portfolio</a></li>
+					<li><a href="#">Training / Skills</a></li>
+					<li><a href="#">References</a></li>
+				</ul>
+				<?php endif; ?>
+			</li>
+			<li class="down"><a href="#" style="font-family: Open Sans;font-weight: 700;font-size: 1.5em;letter-spacing: -2px;">Hire Me!</a></li>
+		</ul>
+	</div>
+	<!--
 	<div class="seven columns">
 		<br /><br />
 		<a href="<?=$url;?>/code" class="btn <?=($page=='code') ? 'down' : null ;?>">
@@ -62,5 +86,9 @@ $page = str_replace( "/PM_Site/" , "" , $_SERVER['REQUEST_URI'] );
 		<a href="<?=$url;?>/showcase" class="btn <?=($page=='showcase') ? 'down' : null ;?>">
 			Showcase
 		</a>
+		<a href="<?=$url;?>/showcase" class="btn <?=($page=='showcase') ? 'down' : null ;?>">
+			Showcase
+		</a>
 	</div>
+-->
 </div>
