@@ -62,9 +62,22 @@ include( 'includes/header.inc.php' ); ?>
 
 	<div class="twelve columns">
 
-		<p class="section_title">PROFESSIONAL EXPERIENCE</p>
+		<hr />
+
+		<p class="section_title">OBJECTIVE</p>
+
+		<section id="objective">
+			<p class="subheading">
+
+				To work in a technology-centric environment and thrive as a member of an influential team.
+
+			</p>
+		</section>
 
 		<hr />
+
+		<p class="section_title">PROFESSIONAL EXPERIENCE</p>
+
 		<section id="job_latimundo">
 			<div class="row">
 				<div class="eight columns">
@@ -97,18 +110,95 @@ include( 'includes/header.inc.php' ); ?>
 					<p class="subheading">Zee-Way Hosting</p>
 				</div>
 				<div class="four columns" style="text-align: right;">
-					<p style="margin-top: 20px;">February 2012 - Present</p>
+					<p style="margin-top: 20px;">2010 - Present</p>
 					<p>Dallas, Texas</p>
 				</div>
 			</div>
 			<div class="row">
 				<div class="twelve columns">
 					<p>
-						Latimundo provides media production and digital effects services as well as offers digital animation rendering services to numerous clients in the Dallas/Fort Worth Metroplex.
+						Increase revenue and expand availability to offer semi-managed shared, virtual, and dedicated server hosting to clients in the US and around the world.
 					</p>
 					<ul>
-						<li>Configure, secure, and maintain high availability Linux web servers.</li>
-						<li>Design, build, deploy, and maintain PHP web applications in multiple high-traffic web properties.</li>
+						<li>Coordinate business relationships with incoming and existing clients.</li>
+						<li>Assist in overseeing web development and new service features.</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+
+		<section id="job_refreshedweb">
+			<div class="row">
+				<div class="eight columns">
+					<p class="heading">FOUNDER / FREELANCER</p>
+					<p class="subheading">Refreshed Web Design</p>
+				</div>
+				<div class="four columns" style="text-align: right;">
+					<p style="margin-top: 20px;">January 2009 - Present</p>
+					<p>Dallas, Texas</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="twelve columns">
+					<p>
+						Founded a small freelance web development firm targeting mid-budget clients interested in building and maintaining an active web presence.
+					</p>
+					<ul>
+						<li>Specialization in PHP-based web application development.</li>
+						<li>Built solutions for clients, ranging from productivity management to telephony.</li>
+						<li>Freelance business, offering clients ad hoc solutions for their needs.</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+
+		<section id="job_limestone">
+			<div class="row">
+				<div class="eight columns">
+					<p class="heading">SALES SPECIALIST</p>
+					<p class="subheading">Limestone Networks, Inc.</p>
+				</div>
+				<div class="four columns" style="text-align: right;">
+					<p style="margin-top: 20px;">August 2008 - April 2009</p>
+					<p>Dallas, Texas</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="twelve columns">
+					<p>
+						Handled incoming sales and business opportunities in an unmanaged dedicated hosting environment.
+					</p>
+					<ul>
+						<li>Generated, analyzed, and presented client, inventory, and sales data metrics.</li>
+						<li>Assisted clients over chat-, email-, and phone-based support channels.</li>
+						<li>Financial monitoring, including chargeback tracking and invoice management.</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+
+		<section id="job_ihop">
+			<div class="row">
+				<div class="eight columns">
+					<p class="heading">MANAGER</p>
+					<p class="subheading">IHOP</p>
+				</div>
+				<div class="four columns" style="text-align: right;">
+					<p style="margin-top: 20px;">March 2007 - January 2008</p>
+					<p>Dallas, Texas</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="twelve columns">
+					<p>
+						Managed 10-20 employees concurrently in a high-volume food service environment.
+					</p>
+					<ul>
+						<li>Handled scheduling, labor cost management, and inventory management.</li>
+						<li>Handled all office equipment and point-of-sale system troubleshooting and support.</li>
 					</ul>
 				</div>
 			</div>
