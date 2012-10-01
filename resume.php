@@ -14,7 +14,7 @@ include( 'includes/header.inc.php' ); ?>
 		</p>
 		<hr />
 		<ul class="nav-bar">
-			<li class="active"><a href="#objective">Objective</a></li>
+			<li><a href="#objective">Objective</a></li>
 			<li class="has-flyout">
 				<a href="#experience">Experience</a>
 				<!-- <a href="#" class="flyout-toggle"><span></span></a> -->
@@ -26,21 +26,15 @@ include( 'includes/header.inc.php' ); ?>
 					<li><a href="#job_ihop">IHOP</a></li>
 				</ul>
 			</li>
-			<li class="has-flyout">
-				<a href="#certifications">Certifications</a>
-				<!-- <a href="#" class="flyout-toggle"><span></span></a> -->
-				<ul class="flyout">
-					<li><a href="#certs_cisco">Cisco</a></li>
-					<li><a href="#certs_comptia">CompTIA</a></li>
-				</ul>
-			</li>
-			<li><a href="#portfolio">Portfolio</a>
+			<li><a href="#certs">Certifications</a></li>
+			<li><a href="<?=$url;?>/portfolio">Portfolio</a>
 			<li class="has-flyout">
 				<a href="#skills">Training / Skills</a>
 				<!-- <a href="#" class="flyout-toggle"><span></span></a> -->
 				<ul class="flyout">
 					<li><a href="#skill_software">Software</a></li>
 					<li><a href="#skill_programming">Programming Languages</a></li>
+					<li><a href="#skill_markup">Structural/Markup Languages</a></li>
 					<li><a href="#skill_frameworks">Frameworks</a></li>
 					<li><a href="#skill_database">Database</a></li>
 					<li><a href="#skill_servers">Server Administration</a></li>
@@ -208,11 +202,16 @@ include( 'includes/header.inc.php' ); ?>
 
 	<hr />
 
-	<p class="section_title">CERTIFICATIONS</p>
+	<p class="section_title" id="certs">CERTIFICATIONS</p>
 
-	<section id="certs_comptia">
+	<section>
 		<div class="row">
 			<div class="twelve columns">
+				<div class="panel">
+					Below you will find a complete list of the certifications I am currently earning. Though I have not completed the full course 
+					regimen and become officially certified, I have made significant progress towards several technology certifications 
+					that demonstrate my knowledge and skills in these areas.
+				</div>
 				<table style="width: 100%;">
 					<thead>
 						<th style="width: 30%;">Certification Authority</th>
@@ -228,7 +227,7 @@ include( 'includes/header.inc.php' ); ?>
 						<tr>
 							<td>CompTIA</td>
 							<td>A+</td>
-							<td><div class="nice radius progress twenty"><span class="meter" style="width: 65%;">Working on it...</span></div></td>
+							<td><div class="nice radius progress twenty"><span class="meter" style="width: 65%;"></span></div></td>
 						</tr>
 						<tr>
 							<td>CompTIA</td>
@@ -242,6 +241,226 @@ include( 'includes/header.inc.php' ); ?>
 						</tr>
 					</tbody>
 				</table>
+			</div>
+		</div>
+	</section>
+
+
+	<hr />
+
+	<p class="section_title" id="portfolio">PORTFOLIO</p>
+
+	<section>
+		<div class="row">
+			<div class="twelve columns">
+				<a href="<?=$url;?>/portfolio" alt="Click to View my Portfolio" title="Click to View my Portfolio"><p class="subheading">Click to View my Portfolio</p></a>
+			</div>
+		</div>
+	</section>
+
+
+	<hr />
+
+	<p class="section_title" id="skills">TRAINING / SKILLS</p>
+
+	<section>
+		<div class="row">
+			<div class="twelve columns">
+				<p class="subheading" id="skill_software">Software</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="panel four columns">
+				<p class="subheading small">Adobe Creative Suite</p>
+				<ul>
+					<li>Fireworks</li>
+					<li>Photoshop</li>
+					<li>Dreamweaver</li>
+				</ul>
+				<img src="<?=$url;?>/assets/images/icons/resume/adobe_fireworks.png" alt="Adobe Fireworks" title="Adobe Fireworks"/>
+				<img src="<?=$url;?>/assets/images/icons/resume/adobe_photoshop.png" alt="Adobe Photoshop" title="Adobe Photoshop"/>
+				<img src="<?=$url;?>/assets/images/icons/resume/adobe_dreamweaver.png" alt="Adobe Dreamweaver" title="Adobe Dreamweaver"/>
+			</div>
+			<div class="panel four columns">
+				<p class="subheading small">Microsoft Office Suite</p>
+				<ul>
+					<li>Excel <span class="radius label">Macros and Formulas</span> </li>
+					<li>Word</li>
+					<li>Powerpoint</li>
+					<li>Access</li>
+				</ul>
+				<img src="<?=$url;?>/assets/images/icons/resume/office_excel.png" alt="Microsoft Excel" title="Microsoft Excel"/>
+				<img src="<?=$url;?>/assets/images/icons/resume/office_word.png" alt="Microsoft Word" title="Microsoft Word"/>
+				<img src="<?=$url;?>/assets/images/icons/resume/office_powerpoint.png" alt="Microsoft Powerpoint" title="Microsoft Powerpoint"/>
+				<img src="<?=$url;?>/assets/images/icons/resume/office_access.png" alt="Microsoft Access" title="Microsoft Access"/>
+			</div>
+			<div class="panel four columns">
+				<p class="subheading small">3D Modeling / Animation</p>
+				<ul>
+					<li>Cinema 4D <span class="radius label">Text-Based Animation</span> </li>
+					<li>Blender</li>
+				</ul>
+				<img src="<?=$url;?>/assets/images/icons/resume/anim_c4d.png" alt="Cinema 4D" title="Cinema 4D"/>
+				<img src="<?=$url;?>/assets/images/icons/resume/anim_blender.png" alt="Blender" title="Blender"/>
+			</div>
+
+		</div>
+
+		<div class="row">
+			<div class="twelve columns">
+				<p class="subheading" id="skill_programming">Programming Languages</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="radius callout panel two columns">
+				<p class="subheading small">PHP</p>
+				<img src="<?=$url;?>/assets/images/icons/resume/page_php_48.png" alt="Object-Oriented PHP" title="Object-Oriented PHP"  />
+			</div>
+			<div class="radius callout panel two columns">
+				<p class="subheading small">Javascript</p>
+				<img src="<?=$url;?>/assets/images/icons/resume/page_javascript_48.png" alt="Object-Oriented Javascript" title="Object-Oriented Javascript" />
+			</div>
+			<div class="panel two columns">
+				<p class="subheading small">Bash Shell</p>
+				<img src="<?=$url;?>/assets/images/icons/resume/shell.png" alt="Bash Shell Scripting" title="Bash Shell Scripting" />
+			</div>
+			<div class="panel two columns">
+				<p class="subheading small">Perl</p>
+				<img src="<?=$url;?>/assets/images/icons/resume/lang_perl.png" alt="Perl" title="Perl" />
+			</div>
+			<div class="radius callout panel two columns">
+				<p class="subheading small">Less CSS</p>
+				<img src="<?=$url;?>/assets/images/icons/resume/lang_less.png" alt="Less CSS" title="Less CSS"  />
+			</div>
+			<div class="panel two columns">
+				<p class="subheading small">SASS</p>
+				<img src="<?=$url;?>/assets/images/icons/resume/lang_sass.png" alt="SASS" title="SASS" style="width: auto;height: 48px;" />
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="twelve columns">
+				<p class="subheading small">All the code that I write is...</p>
+				<div class="panel">
+					<p class="subheading small"><strong>Object-Oriented:</strong> Harness the power of encapsulation, polymorphism, abstraction, modularity and inheritance 
+					to write code that is beautiful, functional, and easier to understand and debug.</p>
+					<p class="subheading small"><strong>Modular:</strong> I don't like writing the same code twice. Neither should you.</p>
+					<p class="subheading small"><strong>Semantic:</strong> I set myself up for success later when debugging by making my class/variable names consistent and understandable.</p>
+					<p class="subheading small"><strong>Well-commented:</strong> Comments and documentation are absolutely crucial when building a codebase.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="twelve columns">
+				<p class="subheading" id="skill_markup">Structural / Markup Languages</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="panel two columns">
+				<p class="subheading small">HTML 5</p>
+				<img src="<?=$url;?>/assets/images/icons/resume/html5.png" alt="HTML 5" title="HTML 5" />
+			</div>
+			<div class="panel two columns">
+				<p class="subheading small">CSS 3</p>
+				<img src="<?=$url;?>/assets/images/icons/resume/css3.png" alt="CSS 3" title="CSS 3" />
+			</div>
+			<div class="panel two columns">
+				<p class="subheading small">XML</p>
+				<img src="<?=$url;?>/assets/images/icons/resume/page_xml_48.png" alt="XML" title="XML" />
+			</div>
+			<div class="six columns"></div>
+		</div>
+
+		<div class="row">
+			<div class="twelve columns">
+				<p class="subheading" id="skill_frameworks">Frameworks</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="radius callout panel two columns">
+				<p class="subheading small">Codeigniter</p>
+				<img src="<?=$url;?>/assets/images/icons/resume/codeigniter.png" alt="Codeigniter" title="Codeigniter" />
+			</div>
+			<div class="panel two columns">
+				<p class="subheading small">Laravel</p>
+				<img src="<?=$url;?>/assets/images/icons/resume/laravel.png" alt="Laravel" title="Laravel" />
+			</div>
+			<div class="panel two columns">
+				<p class="subheading small">Symfony</p>
+				<img src="<?=$url;?>/assets/images/icons/resume/symfony.png" alt="Symfony" title="Symfony" />
+			</div>
+			<div class="radius callout panel two columns">
+				<p class="subheading small">Wordpress</p>
+				<img src="<?=$url;?>/assets/images/icons/resume/wordpress.png" alt="Wordpress" title="Wordpress" />
+			</div>
+			<div class="panel two columns">
+				<p class="subheading small">Drupal</p>
+				<img src="<?=$url;?>/assets/images/icons/resume/drupal.png" alt="Drupal" title="Drupal" />
+			</div>
+			<div class="panel two columns">
+				<p class="subheading small">Joomla</p>
+				<img src="<?=$url;?>/assets/images/icons/resume/joomla.png" alt="Joomla" title="Joomla" />
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="twelve columns">
+				<p class="subheading" id="skill_database">Database</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="radius callout panel two columns">
+				<p class="subheading small">MySQL</p>
+				<img src="<?=$url;?>/assets/images/icons/resume/mysql.png" alt="MySQL" title="MySQL" style="width: auto; height: 64px;" />
+			</div>
+			<div class="panel two columns">
+				<p class="subheading small">MongoDB</p>
+				<img src="<?=$url;?>/assets/images/icons/resume/mongodb.png" alt="CSS 3" title="CSS 3" />
+			</div>
+			<div class="panel two columns">
+				<p class="subheading small">SQLite</p>
+				<img src="<?=$url;?>/assets/images/icons/resume/sqlite.gif" alt="SQLite" title="SQLite" />
+			</div>
+			<div class="panel two columns">
+				<p class="subheading small">PostgreSQL</p>
+				<img src="<?=$url;?>/assets/images/icons/resume/postgresql.png" alt="PostgreSQL" title="PostgreSQL" />
+			</div>
+			<div class="four columns"></div>
+		</div>
+
+		<div class="row">
+			<div class="twelve columns">
+				<p class="subheading" id="skill_servers">Server Administration</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="panel four columns">
+				<p class="subheading small">Administration</p>
+				<ul>
+					<li><strong></strong> </li>
+					<li><strong></strong> </li>
+					<li><strong></strong> </li>
+					<li><strong></strong> </li>
+				</ul>
+			</div>
+			<div class="panel four columns">
+				<p class="subheading small">Security / Configuration</p>
+				<ul>
+					<li><strong></strong> </li>
+					<li><strong></strong> </li>
+					<li><strong></strong> </li>
+					<li><strong></strong> </li>
+				</ul>
+			</div>
+			<div class="panel four columns">
+				<p class="subheading small">Automation</p>
+				<ul>
+					<li><strong></strong> </li>
+					<li><strong></strong> </li>
+					<li><strong></strong> </li>
+					<li><strong></strong> </li>
+				</ul>
 			</div>
 		</div>
 	</section>
