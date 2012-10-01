@@ -35,13 +35,17 @@ $page = strtolower( str_replace( "/PM_Site/" , "" , $_SERVER['REQUEST_URI'] ) );
 	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 	
+<script>
+function track( category , item , meta ) {
+	_gaq.push([ '_trackevent', category , item , meta ]);
+}
+</script>
 </head>
 <body>
 
 <!-- <a href="<?=$url;?>/resume" id="hire_me">
 	<h1>Hire Me!</h1>
 </a> -->
-
 <div class="row">
 	<div class="five columns">
 		<a class="logo" href="<?=$url;?>">PIERCE MOORE</a>
@@ -50,45 +54,31 @@ $page = strtolower( str_replace( "/PM_Site/" , "" , $_SERVER['REQUEST_URI'] ) );
 
 	<div class="seven columns">
 		<ul class="nav-bar">
-			<li class="<?=($page=='code') ? 'active' : null ;?>"><a href="#">Code</a></li>
-			<li class="<?=($page=='music') ? 'active' : null ;?>"><a href="#">Music</a></li>
-			<li class="<?=($page=='portfolio') ? 'active' : null ;?>"><a href="#">Portfolio</a></li>
-			<li class="<?=($page=='showcase') ? 'active' : null ;?>"><a href="#">Showcase</a></li>
-			<li class="<?=($page=='resume') ? 'active' : null ;?>" class="has-flyout">
-				<a href="<?=$url;?>/resume">Resume</a>
-				<!-- <a href="#" class="flyout-toggle"><span> </span></a> -->
-				<?php if( $page != 'resume' ): ?>
-				<ul class="flyout">
-					<li><a href="#">Objective</a></li>
-					<li><a href="#">Experience</a></li>
-					<li><a href="#">Certifications</a></li>
-					<li><a href="#">Portfolio</a></li>
-					<li><a href="#">Training / Skills</a></li>
-					<li><a href="#">References</a></li>
-				</ul>
-				<?php endif; ?>
-			</li>
+			<li class="<?=($page=='code') ? 'active' : null ;?>"><a href="<?=$url;?>/code">Code</a></li>
+			<li class="<?=($page=='music') ? 'active' : null ;?>"><a href="<?=$url;?>/music">Music</a></li>
+			<li class="<?=($page=='portfolio') ? 'active' : null ;?>"><a href="<?=$url;?>/portfolio">Portfolio</a></li>
+			<li class="<?=($page=='showcase') ? 'active' : null ;?>"><a href="<?=$url;?>/showcase">Showcase</a></li>
+			
+			<?php if( $page == 'resume' ): ?>
+				<li class="active">
+					<a href="<?=$url;?>/resume">Resume</a>
+				</li>
+			<?php else: ?>
+				<li class="has-flyout">
+					<a href="<?=$url;?>/resume">Resume</a>
+					<!-- <a href="#" class="flyout-toggle"><span> </span></a> -->
+					<ul class="flyout">
+						<li><a href="#">Objective</a></li>
+						<li><a href="#">Experience</a></li>
+						<li><a href="#">Certifications</a></li>
+						<li><a href="#">Portfolio</a></li>
+						<li><a href="#">Training / Skills</a></li>
+						<li><a href="#">References</a></li>
+					</ul>
+				</li>
+			<?php endif; ?>
 			<li class="down"><a href="#" style="font-family: Open Sans;font-weight: 700;font-size: 1.5em;letter-spacing: -2px;">Hire Me!</a></li>
 		</ul>
 	</div>
-	<!--
-	<div class="seven columns">
-		<br /><br />
-		<a href="<?=$url;?>/code" class="btn <?=($page=='code') ? 'down' : null ;?>">
-			Code
-		</a>
-		<a href="<?=$url;?>/music" class="btn <?=($page=='music') ? 'down' : null ;?>">
-			Music
-		</a>
-		<a href="<?=$url;?>/portfolio" class="btn <?=($page=='portfolio') ? 'down' : null ;?>">
-			Portfolio
-		</a>
-		<a href="<?=$url;?>/showcase" class="btn <?=($page=='showcase') ? 'down' : null ;?>">
-			Showcase
-		</a>
-		<a href="<?=$url;?>/showcase" class="btn <?=($page=='showcase') ? 'down' : null ;?>">
-			Showcase
-		</a>
-	</div>
--->
+
 </div>

@@ -1,5 +1,3 @@
-<!-- <script src="https://gist.github.com/3107841.js?file=arrayToObject.php"></script> -->
-
 
 	<footer>
 
