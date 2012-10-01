@@ -205,6 +205,47 @@ include( 'includes/header.inc.php' ); ?>
 		</section>
 	</div>
 
+
+	<hr />
+
+	<p class="section_title">CERTIFICATIONS</p>
+
+	<section id="certs_comptia">
+		<div class="row">
+			<div class="twelve columns">
+				<table style="width: 100%;">
+					<thead>
+						<th style="width: 30%;">Certification Authority</th>
+						<th style="width: 30%;">Certification Name</th>
+						<th style="width: 40%;">Progress</th>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Cisco</td>
+							<td>CCENT</td>
+							<td><div class="nice radius progress twenty"><span class="meter" style="width: 5%;"></span></div></td>
+						</tr>
+						<tr>
+							<td>CompTIA</td>
+							<td>A+</td>
+							<td><div class="nice radius progress twenty"><span class="meter" style="width: 65%;">Working on it...</span></div></td>
+						</tr>
+						<tr>
+							<td>CompTIA</td>
+							<td>Network+</td>
+							<td><div class="nice radius progress twenty"><span class="meter" style="width: 15%;"></span></div></td>
+						</tr>
+						<tr>
+							<td>CompTIA</td>
+							<td>Linux+</td>
+							<td><div class="nice radius progress twenty"><span class="meter" style="width: 55%;"></span></div></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</section>
+
 	<!-- <div class="three columns quick_find">
 
 		<a href="#objective">Objective</a>
