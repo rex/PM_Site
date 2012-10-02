@@ -81,7 +81,7 @@ include( 'includes/header.inc.php' ); ?>
 					<p class="subheading">Latimundo</p>
 				</div>
 				<div class="four columns" style="text-align: right;">
-					<p style="margin-top: 20px;">February 2012 - Present</p>
+					<p style="margin-top: 20px;">February 2012 - October 2012</p>
 					<p>Dallas, Texas</p>
 				</div>
 			</div>
@@ -517,6 +517,70 @@ include( 'includes/header.inc.php' ); ?>
 				</p>
 			</div>
 		</div>
+
+
+		<div class="row">
+			<div class="twelve columns">
+				<p class="subheading" id="skill_extensions">Browser Extensions</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="panel twelve columns">
+				<p>
+					I have extensive experience creating browser extensions, specializing in Google Chrome. I created a current popular Chrome extension with several hundred users worldwide.
+				</p>
+			</div>
+		</div>
+	</section>
+
+
+	<div class="ellipses">
+		<span class="e1">&nbsp;</span><span class="e2">&nbsp;</span><span class="e3">&nbsp;</span>
+	</div>
+
+	
+	<p class="section_title" id="education">EDUCATION</p>
+
+	<section>
+		<div class="row">
+			<div class="ten columns">
+				<p class="subheading" id="skill_software">Richland College</p>
+				<p class="subheading small">
+					Associate of Applied Science in Software Programming and Engineering
+				</p>
+			</div>
+			<div class="two columns">
+				<p class="subheading small" style="text-align: right;">[2013]</p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="ten columns">
+				<p class="subheading" id="skill_software">Richardson High School</p>
+				<p class="subheading small">
+					General Equivalency Diploma
+				</p>
+			</div>
+			<div class="two columns">
+				<p class="subheading small" style="text-align: right;">[2007]</p>
+			</div>
+		</div>
+	</section>
+
+
+	<div class="ellipses">
+		<span class="e1">&nbsp;</span><span class="e2">&nbsp;</span><span class="e3">&nbsp;</span>
+	</div>
+
+	
+	<p class="section_title" id="references">REFERENCES</p>
+
+	<section>
+		<div class="row">
+			<div class="twelve columns">
+				<p class="subheading">If you would like a copy of my resume complete with references, please <a href="#">click here</a>.</p>
+			</div>
+		</div>
 	</section>
 
 	<!-- <div class="three columns quick_find">
@@ -534,4 +598,4 @@ include( 'includes/header.inc.php' ); ?>
 </div>
 
 
-<?php include( 'includes/footer.inc.php' ); ?>
+<?php include( 'includes/footer.inc.php' ); ?>.
