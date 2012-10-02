@@ -289,6 +289,7 @@ footer {
 		font-size: 1.5em;
 		letter-spacing: -1px;
 		line-height: 110%;
+		clear: both;
 		&.section_title {
 			.f_general;
 			font-size: 3.5em;
@@ -362,5 +363,28 @@ ul {
 	ul {
 		list-style: none;
 		//margin-left: 10%;
+	}
+}
+.ellipses {
+	width: 100px;
+	clear: both;
+	margin: 40px auto 90px auto;
+	span {
+		width: 14px;
+		height: 14px;
+		.round( 7px );
+		.sh_box( 0 1px 3px #333, 0 1px 1px #fff inset );
+		display: block;
+		float: left;
+		margin-right: 10px;
+		&.e1 {
+			background: #2BA8CB;
+		}
+		&.e2 {
+			background: #3E8498;
+		}
+		&.e3 {
+			background: #0E6A84;	
+		}
 	}
 }

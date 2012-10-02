@@ -68,7 +68,11 @@ include( 'includes/header.inc.php' ); ?>
 			</p>
 		</section>
 
-		<hr />
+		<div class="ellipses">
+			<span class="e1">&nbsp;</span>
+			<span class="e2">&nbsp;</span>
+			<span class="e3">&nbsp;</span>
+		</div>
 
 		<p class="section_title">PROFESSIONAL EXPERIENCE</p>
 
@@ -439,28 +443,58 @@ include( 'includes/header.inc.php' ); ?>
 				<p class="subheading small">Administration</p>
 				<ul>
 					<li><strong>Red Hat / Debian:</strong> Extensive experience with set up, configuration, security, and maintenance of Red Hat- and Debian-based Linux servers.</li>
-					<li><strong></strong> </li>
-					<li><strong></strong> </li>
-					<li><strong></strong> </li>
+					<li><strong>CLI:</strong> I am proficient and very comfortable working within a Linux command line or Bash shell.</li>
 				</ul>
 			</div>
 			<div class="panel four columns">
-				<p class="subheading small">Security / Configuration</p>
+				<p class="subheading small">Security</p>
 				<ul>
-					<li><strong></strong> </li>
-					<li><strong></strong> </li>
-					<li><strong></strong> </li>
-					<li><strong></strong> </li>
+					<li><strong>Firewall:</strong> I use CSF, LFD, and iptables to harden the perimeter defenses of servers in my care.</li>
+					<li><strong>Hardening:</strong> Non-standard SSH ports, SSH key-based access, and host-based access control are standard for all servers in my care.</li>
 				</ul>
 			</div>
 			<div class="panel four columns">
 				<p class="subheading small">Automation</p>
 				<ul>
-					<li><strong></strong> </li>
-					<li><strong></strong> </li>
-					<li><strong></strong> </li>
-					<li><strong></strong> </li>
+					<li><strong>Cron / Shell Scripting:</strong> Nobody likes to run the same tasks over and over manually. That's why I write shell scripts in Bash or Perl and automate those tasks using the cron utility.</li>
 				</ul>
+			</div>
+		</div>
+
+
+		<div class="row">
+			<div class="twelve columns">
+				<p class="subheading" id="skill_webservers">Server Technology</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="radius callout panel two columns">
+				<p class="subheading small">Apache</p>
+				<img src="<?=$url;?>/assets/images/icons/resume/mysql.png" alt="Apache" title="Apache" style="width: auto; height: 64px;" />
+			</div>
+			<div class="panel two columns">
+				<p class="subheading small">Nginx</p>
+				<img src="<?=$url;?>/assets/images/icons/resume/mysql.png" alt="Nginx" title="Nginx" style="width: auto; height: 64px;" />
+			</div>
+			<div class="panel two columns">
+				<p class="subheading small">Cherokee</p>
+				<img src="<?=$url;?>/assets/images/icons/resume/mysql.png" alt="Cherokee" title="Cherokee" style="width: auto; height: 64px;" />
+			</div>
+			<div class="six columns"></div>
+		</div>
+
+
+		<div class="row">
+			<div class="twelve columns">
+				<p class="subheading" id="skill_versioning">Code Versioning</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="panel twelve columns">
+				<p>
+					I have extensive experience configuring and maintaining distributed versioning systems, including Git and Subversion. 
+					I have implemented several code integrity systems to ensure stability of production web applications.
+				</p>
 			</div>
 		</div>
 	</section>
