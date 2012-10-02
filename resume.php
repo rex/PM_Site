@@ -438,7 +438,7 @@ include( 'includes/header.inc.php' ); ?>
 			<div class="panel four columns">
 				<p class="subheading small">Administration</p>
 				<ul>
-					<li><strong></strong> </li>
+					<li><strong>Red Hat / Debian:</strong> Extensive experience with set up, configuration, security, and maintenance of Red Hat- and Debian-based Linux servers.</li>
 					<li><strong></strong> </li>
 					<li><strong></strong> </li>
 					<li><strong></strong> </li>
