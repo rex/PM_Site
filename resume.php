@@ -72,7 +72,7 @@ include( 'includes/header.inc.php' ); ?>
 			<span class="e1">&nbsp;</span><span class="e2">&nbsp;</span><span class="e3">&nbsp;</span>
 		</div>
 
-		<p class="section_title">PROFESSIONAL EXPERIENCE</p>
+		<p class="section_title" id="experience">PROFESSIONAL EXPERIENCE</p>
 
 		<section id="job_latimundo">
 			<div class="row">
