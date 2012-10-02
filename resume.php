@@ -69,9 +69,7 @@ include( 'includes/header.inc.php' ); ?>
 		</section>
 
 		<div class="ellipses">
-			<span class="e1">&nbsp;</span>
-			<span class="e2">&nbsp;</span>
-			<span class="e3">&nbsp;</span>
+			<span class="e1">&nbsp;</span><span class="e2">&nbsp;</span><span class="e3">&nbsp;</span>
 		</div>
 
 		<p class="section_title">PROFESSIONAL EXPERIENCE</p>
@@ -204,7 +202,10 @@ include( 'includes/header.inc.php' ); ?>
 	</div>
 
 
-	<hr />
+	<div class="ellipses">
+		<span class="e1">&nbsp;</span><span class="e2">&nbsp;</span><span class="e3">&nbsp;</span>
+	</div>
+
 
 	<p class="section_title" id="certs">CERTIFICATIONS</p>
 
@@ -250,8 +251,11 @@ include( 'includes/header.inc.php' ); ?>
 	</section>
 
 
-	<hr />
+	<div class="ellipses">
+		<span class="e1">&nbsp;</span><span class="e2">&nbsp;</span><span class="e3">&nbsp;</span>
+	</div>
 
+	
 	<p class="section_title" id="portfolio">PORTFOLIO</p>
 
 	<section>
@@ -263,8 +267,11 @@ include( 'includes/header.inc.php' ); ?>
 	</section>
 
 
-	<hr />
+	<div class="ellipses">
+		<span class="e1">&nbsp;</span><span class="e2">&nbsp;</span><span class="e3">&nbsp;</span>
+	</div>
 
+	
 	<p class="section_title" id="skills">TRAINING / SKILLS</p>
 
 	<section>
@@ -470,19 +477,18 @@ include( 'includes/header.inc.php' ); ?>
 		<div class="row">
 			<div class="radius callout panel two columns">
 				<p class="subheading small">Apache</p>
-				<img src="<?=$url;?>/assets/images/icons/resume/mysql.png" alt="Apache" title="Apache" style="width: auto; height: 64px;" />
+				<img src="<?=$url;?>/assets/images/icons/resume/apache.png" alt="Apache" title="Apache" style="width: auto; height: 64px;" />
 			</div>
 			<div class="panel two columns">
 				<p class="subheading small">Nginx</p>
-				<img src="<?=$url;?>/assets/images/icons/resume/mysql.png" alt="Nginx" title="Nginx" style="width: auto; height: 64px;" />
+				<img src="<?=$url;?>/assets/images/icons/resume/nginx.png" alt="Nginx" title="Nginx" style="width: auto; height: 64px;" />
 			</div>
 			<div class="panel two columns">
 				<p class="subheading small">Cherokee</p>
-				<img src="<?=$url;?>/assets/images/icons/resume/mysql.png" alt="Cherokee" title="Cherokee" style="width: auto; height: 64px;" />
+				<img src="<?=$url;?>/assets/images/icons/resume/cherokee.jpg" alt="Cherokee" title="Cherokee" style="width: auto; height: 64px;" />
 			</div>
 			<div class="six columns"></div>
 		</div>
-
 
 		<div class="row">
 			<div class="twelve columns">
@@ -494,6 +500,20 @@ include( 'includes/header.inc.php' ); ?>
 				<p>
 					I have extensive experience configuring and maintaining distributed versioning systems, including Git and Subversion. 
 					I have implemented several code integrity systems to ensure stability of production web applications.
+				</p>
+			</div>
+		</div>
+
+
+		<div class="row">
+			<div class="twelve columns">
+				<p class="subheading" id="skill_support">Minor Support</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="panel twelve columns">
+				<p>
+					I have thorough experience troubleshooting and maintaining home and office computer systems, SNMP-enabled nodes, and networking technology.
 				</p>
 			</div>
 		</div>
