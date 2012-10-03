@@ -51,59 +51,24 @@ include( 'includes/header.inc.php' ); ?>
 	<h1>Spotify <a href="http://open.spotify.com/user/piercemoore" target="_blank" class="small round success button">My Spotify Profile</a></h1>
 
 
-	<h3>Pick a Playlist</h1>
+	<h3>Listen to my Spotify Playlists</h1>
 
 	<div class="row">
 		<div class="five columns">
-			<a href="#" data-reveal-id="spotify_1" class="medium success button">Defining Playlist</a> | <a target="_blank" href="http://open.spotify.com/user/piercemoore/playlist/3QNfNRKFzQ4UMOcpdw0zum" class="tiny round button">Open in Spotify</a> <br />
-			<a href="#" data-reveal-id="spotify_2" class="medium success button">Chillout Playlist</a> | <a target="_blank" href="http://open.spotify.com/user/piercemoore/playlist/7EOiUXfkXj8GmC8LAQmPRM" class="tiny round button">Open in Spotify</a> <br />
+			<a href="http://open.spotify.com/user/piercemoore/playlist/3QNfNRKFzQ4UMOcpdw0zum" class="medium success button">Defining Playlist</a> <br />
+			<a href="http://open.spotify.com/user/piercemoore/playlist/7EOiUXfkXj8GmC8LAQmPRM" class="medium success button">Chillout Playlist</a> <br />
 
 		</div>
 
 		<div class="seven columns">
-			<a href="#" data-reveal-id="spotify_3" class="medium success button">Chillgrim ( Epic Chillout Playlist )</a> | <a target="_blank" href="http://open.spotify.com/user/piercemoore/playlist/0gixIhLYC54z2V0mhWIjyC" class="tiny round button">Open in Spotify</a> <br />
-			<a href="#" data-reveal-id="spotify_4" class="medium success button">Experiments in Ambience</a> | <a target="_blank" href="http://open.spotify.com/album/3q11vSyKVDFostf8Kupgcs" class="tiny round button">Open in Spotify</a> <br />
+			<a href="http://open.spotify.com/user/piercemoore/playlist/0gixIhLYC54z2V0mhWIjyC" class="medium success button">Chillgrim ( Epic Chillout Playlist )</a> <br />
+			<a href="http://open.spotify.com/album/3q11vSyKVDFostf8Kupgcs" class="medium success button">Experiments in Ambience</a> <br />
 
 		</div>
 	</div>
 	<a class="close-reveal-modal normal alert button"> </a>
 </div>
 
-<div id="spotify_1" class="hidden reveal-modal large music spotify" style="min-height: 380px;">
-	<h1>Spotify <a href="http://open.spotify.com/user/piercemoore" target="_blank" class="small round success button">My Spotify Profile</a></h1>
-
-	<h3>Pierce's Defining Playlist</h3>
-<iframe src="https://embed.spotify.com/?uri=spotify:user:piercemoore:playlist:3QNfNRKFzQ4UMOcpdw0zum" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
-
-	<a href="#" data-reveal-id="spotify" class="large button" style="float: left;"><< Back to List</a>
-	</div>
-
-<div id="spotify_2" class="hidden reveal-modal large music spotify" style="min-height: 380px;">
-	<h1>Spotify <a href="http://open.spotify.com/user/piercemoore" target="_blank" class="small round success button">My Spotify Profile</a></h1>
-
-	<h3>Chillout Playlist</h3>
-<iframe src="https://embed.spotify.com/?uri=spotify:user:piercemoore:playlist:7EOiUXfkXj8GmC8LAQmPRM" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
-
-	<a href="#" data-reveal-id="spotify" class="large button" style="float: left;"><< Back to List</a>
-</div>
-
-<div id="spotify_3" class="hidden reveal-modal large music spotify" style="min-height: 380px;">
-	<h1>Spotify <a href="http://open.spotify.com/user/piercemoore" target="_blank" class="small round success button">My Spotify Profile</a></h1>
-
-	<h3>Chillgrim ( Epic Chill Playlist )</h3>
-<iframe src="https://embed.spotify.com/?uri=spotify:user:piercemoore:playlist:0gixIhLYC54z2V0mhWIjyC" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
-
-	<a href="#" data-reveal-id="spotify" class="large button" style="float: left;"><< Back to List</a>
-</div>
-
-<div id="spotify_4" class="hidden reveal-modal large music spotify" style="min-height: 380px;">
-	<h1>Spotify <a href="http://open.spotify.com/user/piercemoore" target="_blank" class="small round success button">My Spotify Profile</a></h1>
-
-	<h3>Experiments in Ambience</h3>
-	<iframe src="https://embed.spotify.com/?uri=spotify:album:3q11vSyKVDFostf8Kupgcs&theme=white" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>	<a class="close-reveal-modal normal alert button"> </a>
-
-	<a href="#" data-reveal-id="spotify" class="large button" style="float: left;"><< Back to List</a>
-</div>
 
 <div class="row">
 
