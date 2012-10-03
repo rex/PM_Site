@@ -1,6 +1,8 @@
 <?php
 
 $url = "http://localhost/PM_Site";
+$assets = "$url/assets";
+$images = "$assets/images";
 $page = strtolower( str_replace( "/PM_Site/" , "" , $_SERVER['REQUEST_URI'] ) );
 
 ?>
@@ -24,9 +26,9 @@ $page = strtolower( str_replace( "/PM_Site/" , "" , $_SERVER['REQUEST_URI'] ) );
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,700|Oxygen+Mono|Source+Sans+Pro:900|Open+Sans+Condensed:300|Josefin+Slab:300,700' rel='stylesheet' type='text/css'>
 
 	<!-- Included JS Files (Compressed) -->
-	<link rel="stylesheet/less" href="assets/less/styles.less" type="text/css">
+	<link rel="stylesheet/less" href="<?=$assets;?>/less/styles.less" type="text/css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-	<script src="assets/js/unified.js"></script>
+	<script src="<?=$assets;?>/js/unified.js"></script>
 
 
 	<!-- IE Fix for HTML5 Tags -->
@@ -76,8 +78,62 @@ function track( category , item , meta ) {
 					</ul>
 				</li>
 			<?php endif; ?>
-			<li class="down"><a href="#" style="font-family: Open Sans;font-weight: 700;font-size: 1.5em;letter-spacing: -2px;">Hire Me!</a></li>
+			<li class="down"><a href="#" data-reveal-id="hireme_modal" style="font-size: 1.5em;letter-spacing: -2px;"><strong>Hire Me!</strong></a></li>
 		</ul>
 	</div>
 
+</div>
+
+<script>
+$(document).ready(function() {
+	$("#hireme_contact_submit").live('click', function() {
+		$.ajax({
+			url		:	"<?=$url;?>/includes/ajax.php",
+			data 	: 	'email=' + $("#hireme_contact_email").val(),
+			success : 	function( msg ) {
+				console.log( msg );
+				alert( msg );
+			}
+		});
+	});
+});
+</script>
+
+<!-- "Hire Me" Modal for all pages -->
+<div id="hireme_modal" class="reveal-modal large" style="display: none;">
+	<h1>I make a great team member.</h1>
+
+	<p class="subheading" style="line-height: 100%;">
+		I am currently looking for the next team that I will grow with, and I think that you should consider me for yours.
+	</p>
+ 
+	<table style="width: 100%;">
+		<thead>
+			<th>Connect on LinkedIn</th>
+			<th>Download my vCard</th>
+			<th>Download my R&eacute;sum&eacute;</th>
+		</thead>
+
+		<tbody>
+			<tr>
+				<td><a href="http://www.linkedin.com/in/piercemoore" target="_blank" class="large radius button" alt="View my LinkedIn Profile" title="View my LinkedIn Profile" ><img src="<?=$images;?>/icons/linkedin.png" /></a></td>
+				<td><a href="<?=$assets;?>/PierceMoore.vcf" target="_blank" class="large radius button" alt="Download my vCard" title="Download my vCard" ><img src="<?=$images;?>/icons/vcard.png" /></a></td>
+				<td><a href="<?=$assets;?>/PierceMoore.pdf" target="_blank" class="large radius button" alt="Download my R&eacute;sum&eacute;" title="Download my R&eacute;sum&eacute;" ><img src="<?=$images;?>/icons/resume.png" /></a></td>
+			</tr>
+		</tbody>
+	</table>
+
+
+	<p class="subheading">If you leave me your email address, I'll contact you immediately.</p>
+	<div class="row collapse">
+		<div class="ten columns">
+			<input type="text" id="hireme_contact_email" placeholder="Your Email Address..." />
+		</div>
+		<div class="two columns">
+			<a href="#" id="hireme_contact_submit" class="postfix button" style="padding-left: 20px;padding-right: 20px;">Connect</a>
+		</div>
+	</div>
+	
+
+	<a class="close-reveal-modal normal alert button"> </a>
 </div>
