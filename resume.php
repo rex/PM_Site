@@ -477,14 +477,14 @@ $(document).ready( function() {
 			<div class="panel four columns">
 				<p class="subheading small">Administration</p>
 				<ul>
-					<li><strong>Red Hat / Debian:</strong> Extensive experience with set up, configuration, security, and maintenance of Red Hat- and Debian-based Linux servers.</li>
+					<li><strong>Red Hat / Debian:</strong> I have extensive experience with set up, configuration, security, and maintenance of Red Hat- and Debian-based Linux servers.</li>
 					<li><strong>CLI:</strong> I am proficient and very comfortable working within a Linux command line or Bash shell.</li>
 				</ul>
 			</div>
 			<div class="panel four columns">
 				<p class="subheading small">Security</p>
 				<ul>
-					<li><strong>Firewall:</strong> I use CSF, LFD, and iptables to harden the perimeter defenses of servers in my care.</li>
+					<li><strong>Firewall:</strong> I use CSF, LFD, and iptables to harden the perimeter defenses of servers that I administer.</li>
 					<li><strong>Hardening:</strong> Non-standard SSH ports, SSH key-based access, and host-based access control are standard for all servers in my care.</li>
 				</ul>
 			</div>
@@ -492,6 +492,7 @@ $(document).ready( function() {
 				<p class="subheading small">Automation</p>
 				<ul>
 					<li><strong>Cron / Shell Scripting:</strong> Nobody likes to run the same tasks over and over manually. That's why I write shell scripts in Bash or Perl and automate those tasks using the cron utility.</li>
+					<li><strong>Server Monitoring:</strong> I take server health very seriously. That's why I write utilities to interact with <strong>Zabbix</strong> to help everyone sleep better at night.</li>
 				</ul>
 			</div>
 		</div>

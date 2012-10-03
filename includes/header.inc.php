@@ -4,7 +4,6 @@ $url = "http://localhost/PM_Site";
 $page = strtolower( str_replace( "/PM_Site/" , "" , $_SERVER['REQUEST_URI'] ) );
 
 ?>
-
 <!DOCTYPE html>
 
 <!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
@@ -68,12 +67,12 @@ function track( category , item , meta ) {
 					<a href="<?=$url;?>/resume">Resume</a>
 					<!-- <a href="#" class="flyout-toggle"><span> </span></a> -->
 					<ul class="flyout">
-						<li><a href="#">Objective</a></li>
-						<li><a href="#">Experience</a></li>
-						<li><a href="#">Certifications</a></li>
-						<li><a href="#">Portfolio</a></li>
-						<li><a href="#">Training / Skills</a></li>
-						<li><a href="#">References</a></li>
+						<li><a href="<?=$url;?>/resume#objective">Objective</a></li>
+						<li><a href="<?=$url;?>/resume#experience">Experience</a></li>
+						<li><a href="<?=$url;?>/resume#certs">Certifications</a></li>
+						<li><a href="<?=$url;?>/portfolio">Portfolio</a></li>
+						<li><a href="<?=$url;?>/resume#skills">Training / Skills</a></li>
+						<li><a href="<?=$url;?>/resume#references">References</a></li>
 					</ul>
 				</li>
 			<?php endif; ?>
