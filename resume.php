@@ -10,14 +10,16 @@ include( 'includes/header.inc.php' ); ?>
 $(document).ready( function() {
 	var navbar_top = $("#resume_nav").offset().top;
 	var navbar_height = $("#resume_nav").height();
-	var navbar_bottom = parseInt( navbar_top ) + parseInt( navbar_height );
+	//var navbar_bottom = parseInt( navbar_top ) + parseInt( navbar_height );
 
 	$(window).scroll( function() {
 		var scrolltop = $(window).scrollTop();
-		if( scrolltop > navbar_bottom ) {
+		if( scrolltop > navbar_top ) {
 			$("#resume_nav").css({ position : "fixed" , top : "-20px" , left : 0 , width : "100%" });
+			$("#backToTop").show();
 		} else {
 			$("#resume_nav").css({ position : "" });
+			$("#backToTop").hide();
 		}
 	});
 
@@ -68,8 +70,10 @@ $(document).ready( function() {
 					<li><a href="#skill_extensions">Browser Extensions</a></li>
 				</ul>
 			</li>
-			<li><a href="#education">Education</a>
-			<li><a href="#references">References</a>
+			<li><a href="#education">Education</a></li>
+			<li><a href="#references">References</a></li>
+			<li style="float: right;"><a href="#logo" id="backToTop" style="display: none;">&uArr; Scroll Back to Top &uArr;</a></li>
+			<li class="down" style="float: right;"><a href="#" style="font-family: Open Sans;font-weight: 700;font-size: 1.5em;letter-spacing: -2px;">Hire Me!</a></li>
 		</ul>
 
 

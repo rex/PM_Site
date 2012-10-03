@@ -48,7 +48,7 @@ function track( category , item , meta ) {
 </a> -->
 <div class="row">
 	<div class="five columns">
-		<a class="logo" href="<?=$url;?>">PIERCE MOORE</a>
+		<a class="logo" id="logo" href="<?=$url;?>">PIERCE MOORE</a>
 		<p style="font-family: 'Open Sans Condensed';font-size: 1.4em;letter-spacing: -1px;">Great code, great food, great music, great company.</p>
 	</div>
 
