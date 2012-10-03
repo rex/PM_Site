@@ -5,6 +5,30 @@ include( 'includes/header.inc.php' ); ?>
 
 <link href='http://fonts.googleapis.com/css?family=Quicksand:300|Wire+One|Josefin+Sans:300' rel='stylesheet' type='text/css'>
 
+<script>
+
+$(document).ready( function() {
+	var navbar_top = $("#resume_nav").offset().top;
+	var navbar_height = $("#resume_nav").height();
+	var navbar_bottom = parseInt( navbar_top ) + parseInt( navbar_height );
+
+	$(window).scroll( function() {
+		var scrolltop = $(window).scrollTop();
+		if( scrolltop > navbar_bottom ) {
+			$("#resume_nav").css({ position : "fixed" , top : "-20px" , left : 0 , width : "100%" });
+		} else {
+			$("#resume_nav").css({ position : "" });
+		}
+	});
+
+	$("#resume_nav li a").click( function() {
+		var pos = $( $(this).attr("href") ).offset().top;
+		$('body,html').animate({ scrollTop : pos - 50 });
+	});
+});
+
+</script>
+
 <div class="row">
 
 	<div class="twelve columns">
@@ -13,7 +37,7 @@ include( 'includes/header.inc.php' ); ?>
 			Let me show you why you should hire me. 
 		</p>
 		<hr />
-		<ul class="nav-bar">
+		<ul class="nav-bar" id="resume_nav">
 			<li><a href="#objective">Objective</a></li>
 			<li class="has-flyout">
 				<a href="#experience">Experience</a>
@@ -38,7 +62,6 @@ include( 'includes/header.inc.php' ); ?>
 					<li><a href="#skill_frameworks">Frameworks</a></li>
 					<li><a href="#skill_database">Database</a></li>
 					<li><a href="#skill_servers">Server Administration</a></li>
-					<li><a href="#skill_monitoring">Server/Network Monitoring</a></li>
 					<li><a href="#skill_webservers">Webserver Technology</a></li>
 					<li><a href="#skill_versioning">Code Versioning</a></li>
 					<li><a href="#skill_support">Tech Support</a></li>
@@ -48,6 +71,8 @@ include( 'includes/header.inc.php' ); ?>
 			<li><a href="#education">Education</a>
 			<li><a href="#references">References</a>
 		</ul>
+
+
 	</div>
 </div>
 
@@ -56,11 +81,9 @@ include( 'includes/header.inc.php' ); ?>
 
 	<div class="twelve columns">
 
-		<hr />
-
-		<p class="section_title">OBJECTIVE</p>
 
 		<section id="objective">
+			<p class="section_title">OBJECTIVE</p>
 			<p class="subheading">
 
 				To work in a technology-centric environment and thrive as a member of an influential team.
@@ -207,9 +230,10 @@ include( 'includes/header.inc.php' ); ?>
 	</div>
 
 
-	<p class="section_title" id="certs">CERTIFICATIONS</p>
 
-	<section>
+	<section id="certs">
+
+		<p class="section_title">CERTIFICATIONS</p>
 		<div class="row">
 			<div class="twelve columns">
 				<div class="panel">
@@ -255,10 +279,10 @@ include( 'includes/header.inc.php' ); ?>
 		<span class="e1">&nbsp;</span><span class="e2">&nbsp;</span><span class="e3">&nbsp;</span>
 	</div>
 
-	
-	<p class="section_title" id="portfolio">PORTFOLIO</p>
 
-	<section>
+	<section id="portfolio">
+	
+	<p class="section_title">PORTFOLIO</p>
 		<div class="row">
 			<div class="twelve columns">
 				<a href="<?=$url;?>/portfolio" alt="Click to View my Portfolio" title="Click to View my Portfolio"><p class="subheading">Click to View my Portfolio</p></a>
@@ -271,10 +295,10 @@ include( 'includes/header.inc.php' ); ?>
 		<span class="e1">&nbsp;</span><span class="e2">&nbsp;</span><span class="e3">&nbsp;</span>
 	</div>
 
-	
-	<p class="section_title" id="skills">TRAINING / SKILLS</p>
 
-	<section>
+	<section id="skills">
+	
+		<p class="section_title">TRAINING / SKILLS</p>
 		<div class="row">
 			<div class="twelve columns">
 				<p class="subheading" id="skill_software">Software</p>
@@ -538,10 +562,10 @@ include( 'includes/header.inc.php' ); ?>
 		<span class="e1">&nbsp;</span><span class="e2">&nbsp;</span><span class="e3">&nbsp;</span>
 	</div>
 
-	
-	<p class="section_title" id="education">EDUCATION</p>
 
-	<section>
+	<section id="education">
+	
+		<p class="section_title">EDUCATION</p>
 		<div class="row">
 			<div class="ten columns">
 				<p class="subheading" id="skill_software">Richland College</p>
@@ -572,29 +596,16 @@ include( 'includes/header.inc.php' ); ?>
 		<span class="e1">&nbsp;</span><span class="e2">&nbsp;</span><span class="e3">&nbsp;</span>
 	</div>
 
-	
-	<p class="section_title" id="references">REFERENCES</p>
 
-	<section>
+	<section id="references">
+	
+		<p class="section_title">REFERENCES</p>
 		<div class="row">
 			<div class="twelve columns">
 				<p class="subheading">If you would like a copy of my resume complete with references, please <a href="#">click here</a>.</p>
 			</div>
 		</div>
 	</section>
-
-	<!-- <div class="three columns quick_find">
-
-		<a href="#objective">Objective</a>
-		<a href="#experience">Professional Experience</a>
-		<a href="#certifications">Certifications</a>
-		<a href="#portfolio">Portfolio</a>
-		<a href="#skills">Training / Skills</a>
-		<a href="#education">Education</a>
-		<a href="#references">References</a>
-		<a href="#contact">Contact</a>
-
-	</div> -->
 </div>
 
 
