@@ -49,8 +49,6 @@ $snips->add( "Keep the Footer at the Bottom of the Page with jQuery" , "jQuery F
 			I write lots and lots of code.
 		</p>
 
-		<hr />
-
 
 <?php 
 
@@ -74,7 +72,7 @@ foreach( $snips->snips as $snippet ): ?>
 </div>
 
 
-<a href="#" data-reveal-id="snippet_<?=$counter;?>" class="large secondary button <?=$snippet->lang;?>"><?=$snippet->short;?></a>
+<a href="#" data-reveal-id="snippet_<?=$counter;?>" class="medium secondary button"><span class="round label"><?=$snippet->lang;?></span> <?=$snippet->short;?></a>
 
 <?php $counter++; ?>
 <?php endforeach; ?>
