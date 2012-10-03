@@ -19,7 +19,7 @@ $(window).load( function() {
 	<div class="twelve columns">
 
 		<p class="huge_text" style="text-align:center;">
-			Good Code Is
+			Good Code Is...
 		</p>
 
 	</div>
