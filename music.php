@@ -55,14 +55,14 @@ include( 'includes/header.inc.php' ); ?>
 
 	<div class="row">
 		<div class="five columns">
-			<a href="http://open.spotify.com/user/piercemoore/playlist/3QNfNRKFzQ4UMOcpdw0zum" class="medium success button">Defining Playlist</a> <br />
-			<a href="http://open.spotify.com/user/piercemoore/playlist/7EOiUXfkXj8GmC8LAQmPRM" class="medium success button">Chillout Playlist</a> <br />
+			<a href="http://open.spotify.com/user/piercemoore/playlist/3QNfNRKFzQ4UMOcpdw0zum" class="medium success button" target="_blank">Defining Playlist</a> <br />
+			<a href="http://open.spotify.com/user/piercemoore/playlist/7EOiUXfkXj8GmC8LAQmPRM" class="medium success button" target="_blank">Chillout Playlist</a> <br />
 
 		</div>
 
 		<div class="seven columns">
-			<a href="http://open.spotify.com/user/piercemoore/playlist/0gixIhLYC54z2V0mhWIjyC" class="medium success button">Chillgrim ( Epic Chillout Playlist )</a> <br />
-			<a href="http://open.spotify.com/album/3q11vSyKVDFostf8Kupgcs" class="medium success button">Experiments in Ambience</a> <br />
+			<a href="http://open.spotify.com/user/piercemoore/playlist/0gixIhLYC54z2V0mhWIjyC" class="medium success button" target="_blank">Chillgrim ( Epic Chillout Playlist )</a> <br />
+			<a href="http://open.spotify.com/album/3q11vSyKVDFostf8Kupgcs" class="medium success button" target="_blank">Experiments in Ambience</a> <br />
 
 		</div>
 	</div>
