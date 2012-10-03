@@ -35,11 +35,23 @@ $snips->add( "Recursively Convert a Multi-Dimentional PHP Array to an Object" , 
 $snips->add( "Function Recursion within a Class / Object" , "Recursion in a Class" , "php" , "https://gist.github.com/2292935.js?file=gistfile1.aw" );
 $snips->add( "Unlimited / Variable Number Function Arguments" , "Variable Function Arguments" , "php" , "https://gist.github.com/2253239.js?file=gistfile1.aw" );
 $snips->add( "Keep the Footer at the Bottom of the Page with jQuery" , "jQuery Footer Placement" , "js" , "https://gist.github.com/1969584.js?file=placefooter.jquery.js" );
-
+$snips->add( "Add and Loop Through All Snippets on this Page" , "This Page's Snippet Loop" , "php" , "https://gist.github.com/3825556.js?file=pm_codepage.php" );
 
 ?>
 
-
+<script>
+$(window).load( function() {
+	$(".snippetButton").click( function( e ) {
+		e.preventDefault();
+		var href = $(this).attr("href");
+		$("html,body").animate({ scrollTop : 0 }, 500 , function() {
+			$(href).reveal();
+		});
+		$(".reveal-modal").attr("style","top: -30px;margin-top:-30px;");
+		
+	});
+});
+</script>
 
 <div class="row">
 
@@ -61,18 +73,18 @@ foreach( $snips->snips as $snippet ): ?>
 	<script src="<?=$snippet->url;?>"></script>
 
 	<?php if( $counter > 1 ): ?>
-		<a href="#" data-reveal-id="snippet_<?=$counter - 1;?>" class="medium secondary button" style="float: left;">Last Snippet: <?=$snips->snips->{$counter - 1}->short;?></a>
+		<a href="#" data-reveal-id="snippet_<?=$counter - 1;?>" class="medium secondary button snippetButton" style="float: left;">Last Snippet: <?=$snips->snips->{$counter - 1}->short;?></a>
 	<?php endif; ?>
 
 	<?php if( isset( $snips->snips->{$counter + 1} ) ): ?>
-		<a href="#" data-reveal-id="snippet_<?=$counter + 1;?>" class="medium button" style="float: right;">Next Snippet: <?=$snips->snips->{$counter + 1}->short;?></a>
+		<a href="#" data-reveal-id="snippet_<?=$counter + 1;?>" class="medium button snippetButton" style="float: right;">Next Snippet: <?=$snips->snips->{$counter + 1}->short;?></a>
 	<?php endif; ?>
 
 	<a class="close-reveal-modal normal alert button"> </a>
 </div>
 
 
-<a href="#" data-reveal-id="snippet_<?=$counter;?>" class="medium secondary button"><span class="round label"><?=$snippet->lang;?></span> <?=$snippet->short;?></a>
+<a href="#" data-reveal-id="snippet_<?=$counter;?>" class="medium secondary button snippetButton"><span class="round label"><?=$snippet->lang;?></span> <?=$snippet->short;?></a>
 
 <?php $counter++; ?>
 <?php endforeach; ?>
