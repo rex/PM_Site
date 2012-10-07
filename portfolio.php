@@ -20,11 +20,21 @@ $(window).load( function() {
 	<div class="twelve columns">
 
 		<p class="huge_text" style="text-align:center;">
-			I've done stuff! It's just not here yet.
+			A brief overview of some of my projects.
 		</p>
 
 	</div>
 
+</div>
+
+<div class="row">
+
+	<div class="five columns">
+		<a class="th"><img src="http://placehold.it/350x200" /></a>
+	</div>
+	<div class="seven columns">
+		<h1>CMS Project</h1>
+	</div>
 </div>
 <!--
 <div class="row">
