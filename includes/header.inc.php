@@ -78,7 +78,7 @@ function track( category , item , meta ) {
 					</ul>
 				</li>
 			<?php endif; ?>
-			<li class="down"><a href="#" data-reveal-id="hireme_modal" style="font-size: 1.2em;letter-spacing: -2px;"><strong>Hire Me!</strong></a></li>
+			<li class="down" style="float: right;"><a href="#" data-reveal-id="hireme_modal" style="font-size: 1.2em;letter-spacing: -2px;"><strong>Hire Me!</strong></a></li>
 		</ul>
 	</div>
 
