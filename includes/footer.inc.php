@@ -1,10 +1,12 @@
 
 	<footer>
 
+		<hr />
 		<div class="row">
 			<div class="three columns"></div>
 			<div class="six columns">
 				<h1>Here's where you can find me.</h1>
+				<p style="font-size: 1em;line-height: 100%; text-align: center;">( All links open in a new window )</p>
 			</div>
 			<div class="three columns"></div>
 		<div class="row" style="padding-left: 10px;">
