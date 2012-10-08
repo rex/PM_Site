@@ -44,6 +44,8 @@ function track( category , item , meta ) {
 </head>
 <body>
 
+<a href="https://www.github.com/piercemoore" target="_blank" class="forkme_link"><img src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub!" title="Fork me on GitHub!" /></a>
+
 <!-- <a href="<?=$url;?>/resume" id="hire_me">
 	<h1>Hire Me!</h1>
 </a> -->
