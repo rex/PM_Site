@@ -15,18 +15,36 @@ $(document).ready( function() {
 	$(window).scroll( function() {
 		var scrolltop = $(window).scrollTop();
 		if( scrolltop > navbar_top ) {
-			$("#resume_nav").css({ position : "fixed" , top : "-20px" , left : 0 , width : "100%" });
+			$("#resume_nav").css({ position : "fixed" , top : "-20px" , left : 0 , width : "100%" }).addClass("navbar_notAtTop");
 			$("#backToTop").show();
 		} else {
-			$("#resume_nav").css({ position : "" });
+			$("#resume_nav").css({ position : "" }).removeClass("navbar_notAtTop");
 			$("#backToTop").hide();
 		}
 	});
 
-	$("#resume_nav li a").click( function() {
+	$("#resume_nav li a, #resume_nav li ul li a").click( function() {
+
+		if( $("#resume_nav").hasClass("navbar_notAtTop") ) {
+			var padding = 50;
+		} else {
+			var padding = 100;
+		}
 		var pos = $( $(this).attr("href") ).offset().top;
-		$('body,html').animate({ scrollTop : pos - 50 });
+		$('html,body').animate({ scrollTop : pos - padding }, 500 );
+		return false;
+
 	});
+
+/*
+	@todo: Change all IDs to classes so that I can ease in on each page load.
+	
+	$(window).bind( "load" , function() {
+		var section = window.location.href.split("#")[1];
+		$("html,body").animate({ scrollTop : $( "#" + section ).offset().top }, 500 );
+	});
+
+*/
 });
 
 </script>
