@@ -60,7 +60,7 @@ function track( category , item , meta ) {
 			<li class="<?=($page=='code') ? 'active' : null ;?>"><a href="<?=$url;?>/code">Code</a></li>
 			<li class="<?=($page=='music') ? 'active' : null ;?>"><a href="<?=$url;?>/music">Music</a></li>
 			<li class="<?=($page=='portfolio') ? 'active' : null ;?>"><a href="<?=$url;?>/portfolio">Portfolio</a></li>
-			<li class="<?=($page=='showcase') ? 'active' : null ;?>"><a href="<?=$url;?>/showcase">Showcase</a></li>
+			<!-- <li class="<?=($page=='showcase') ? 'active' : null ;?>"><a href="<?=$url;?>/showcase">Showcase</a></li>-->
 			
 			<?php if( $page == 'resume' ): ?>
 				<li class="active">
