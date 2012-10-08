@@ -16,26 +16,51 @@ include( 'includes/header.inc.php' ); ?>
 
 <!-- https://api.github.com/users/piercemoore/repos? -->
 <script>
+
+
 $(document).ready(function() {
+
+	var btn_gh_fetch = $("#github_show");
+	var progress = $("#github_progress");
+	var gh_list =  $("#github_area");
+	var gh_table = $("#github_repos_table tbody");
+	var p_repo = $("#processing_repo");
+	var p_action = $("#processing_action");
+	var p_progress = $("#processing_progress");
+	var p_header = $("#processing_header");
+
+	function addField( name , value ) {
+		p_action.text( name );
+		return "<td>" + value + "</td>";
+	}
+
 	$("#github_show").click( function() {
-		var btn_gh_fetch = $("#github_show");
-		var progress = $("#github_progress");
-		var gh_list =  $("#github_area");
-		var gh_table = $("#github_repos_table");
-		var p_repo = $("#processing_repo");
-		var p_action = $("#processing_action");
-		var p_progress = $("#processing_progress");
-		var p_header = $("#processing_header");
+		var table_html = "";
 
 		$(this).addClass("disabled").slideUp("fast");
 		progress.slideDown("fast").removeClass("hidden");
 		p_header.text("FETCHING...");
 		p_progress.animate({width:"5%"}, 250 );
-/*		
+
 		$.getJSON("https://api.github.com/users/piercemoore/repos?", function( data ) {
-			console.log( data );
+			p_progress.animate({width:"10%"}, 250 );
+			p_header.text("PROCESSING...");
+			$.each( data , function( key , val ) {
+				p_repo.text( val.name );
+				var repo_link = '<a class="small radius button f_general" style="font-weight: 700;" href="' + val.html_url + '" target="_blank" alt="Open \"' + val.name + '\" on GitHub" title="Open \"' + val.name + '\" on GitHub">' + val.name + '</a>';
+				table_html += "<tr>";
+				table_html += addField( "Repository Name" , repo_link );
+				table_html += addField( "Repository Description" , val.description );
+				table_html += addField( "Watchers" , val.watchers );
+				table_html += addField( "Forks" , val.forks );
+				table_html += addField( "Issues" , val.open_issues_count );
+				table_html += "</tr>";
+			});
+			gh_table.append( table_html );
+			progress.slideUp("fast");
+			gh_list.slideDown("fast");
 		});
-*/
+
 	});
 
 });
@@ -57,9 +82,20 @@ $(document).ready(function() {
 			</p>
 		</a>
 	</div>
+</div>
 
+<div class="row">
 	<div class="twelve columns" style="display:none;" id="github_area">
-		<table id="github_repos_table"></table>
+		<table id="github_repos_table">
+			<thead>
+				<th>Name</th>
+				<th>Description</th>
+				<th>W</th>
+				<th>F</th>
+				<th>I</th>
+			</thead>
+			<tbody></tbody>
+		</table>
 	</div>
 </div>
 
