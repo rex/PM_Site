@@ -11,6 +11,27 @@ include( 'includes/header.inc.php' ); ?>
 	</div>
 </div>
 
+<hr />
+
+
+<!-- https://api.github.com/users/piercemoore/repos? -->
+<div class="row">
+	<div class="twelve columns centered" style="text-align: center;">
+		
+		<a href="#" id="github_repos_button_show" class="large radius button">
+			<p>
+				<img src="http://cdn1.iconfinder.com/data/icons/D_Social_Icon_Set/32/githubpx.png" alt="Fetch my GitHub Repos" title="Fetch my GitHub Repos" align="left" style="margin-right: 15px;" />
+				Fetch my GitHub Repos by Clicking this Awesome Button!
+			</p>
+		</a>
+	</div>
+
+	<div class="twelve columns" style="display:none;" id="github_repos_list">
+		<table id="github_repos_table"></table>
+	</div>
+</div>
+
+
 <div class="row">
 	<hr />
 	<div class="five columns">
