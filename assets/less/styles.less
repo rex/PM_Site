@@ -122,12 +122,22 @@ body {
 		.sh_box( 0 3px 10px #222 , 0 1px 1px #eee inset );
 	}
 }
+.hidden {
+	display : none;
+	visibility: hidden;
+}
+::selection,::-moz-selection,::-webkit-selection,::-o-selection {
+	color: #fff;
+	background: #ff61f2;
+	.sh_text( 0 1px 5px #000 );
+}
 
 // Headers and whatnot
 h1,h2,h3,h4,h5 {
 	.f_accent;
 }
 h1,h2,h3,h4 {
+	letter-spacing: -2px;
 	&.styled {
 		.f_block;
 		color: #ccc;
