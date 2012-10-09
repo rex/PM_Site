@@ -6,10 +6,7 @@ include( 'includes/header.inc.php' ); ?>
 <script>
 $(window).load( function() {
 	$("#slider").orbit({
-		fluid: 		'16x6',
-		captions: 	true,
-		captionAnimation: 		'fade',
-		captionAnimationSpeed: 	800
+		fluid: 		'16x6'
 	});
 });
 </script>

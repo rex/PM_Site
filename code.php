@@ -116,7 +116,7 @@ $(document).ready(function() {
 
 	function addField( name , value ) {
 		console.log( "Adding field: " + name + ", value: " + value );
-		p_action.text( name );
+		//p_action.text( name );
 		return "<td>" + value + "</td>";
 	}
 
@@ -205,6 +205,7 @@ $(document).ready(function() {
 			<p class="heading">Here are all my public GitHub repos.</p>
 		</div>
 	</div>
+	<br />
 	<div class="row">
 		<div class="twelve columns">
 			<table id="github_repos_table">
