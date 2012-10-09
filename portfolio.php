@@ -89,13 +89,36 @@ include( 'includes/header.inc.php' ); ?>
 
 <script>
 $(window).load( function() {
+	$("#slider_cms").orbit({
+		animation : "fade",
+		animationSpeed : 800
+	});
 	$("#slider_bantp").orbit({
+		animation : "fade",
+		animationSpeed : 400
+	});
+	$("#slider_rubyphp").orbit({
+		animation : "fade",
+		animationSpeed : 800
+	});
+	$("#slider_tickomatic").orbit({
 		animation : "fade",
 		animationSpeed : 400
 	});
 });
 </script>
+
 <!-- Below are the modal dialogs -->
+<div id="portfolio_cms" class="hidden reveal-modal large">
+	<p class="big_white">Custom CMS</p>
+	<div id="slider_cms" class="slider">
+		<img src="<?=$images;?>/portfolio/bantp_1.jpg" />
+		<img src="<?=$images;?>/portfolio/bantp_2.jpg" />
+		<img src="<?=$images;?>/portfolio/bantp_3.jpg" />
+		<img src="<?=$images;?>/portfolio/bantp_4.jpg" />
+	</div>
+</div>
+
 <div id="portfolio_bantp" class="hidden reveal-modal large">
 	<p class="big_white">Bad Ass New Tab Page</p>
 	<div id="slider_bantp" class="slider">
@@ -106,4 +129,19 @@ $(window).load( function() {
 	</div>
 </div>
 
+<div id="portfolio_rubyphp" class="hidden reveal-modal large">
+	<p class="big_white">RubyPHP</p>
+	<div id="slider_rubyphp" class="slider">
+		<img src="<?=$images;?>/portfolio/rubyphp_info.png" />
+		<img src="<?=$images;?>/portfolio/rubyphp_code.png" />
+	</div>
+</div>
+
+<div id="portfolio_tickomatic" class="hidden reveal-modal large">
+	<p class="big_white">Tickomatic</p>
+	<div id="slider_tickomatic" class="slider">
+		<img src="<?=$images;?>/portfolio/rubyphp_info.png" />
+		<img src="<?=$images;?>/portfolio/rubyphp_code.png" />
+	</div>
+</div>
 <?php include( 'includes/footer.inc.php' ); ?>
