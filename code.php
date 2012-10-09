@@ -115,6 +115,7 @@ $(document).ready(function() {
 	var gh_grav = "";
 
 	function addField( name , value ) {
+		console.log( "Adding field: " + name + ", value: " + value );
 		p_action.text( name );
 		return "<td>" + value + "</td>";
 	}
@@ -136,7 +137,7 @@ $(document).ready(function() {
 			var increment = 80 / parseInt( data.length );
 			$.each( data , function( key , val ) {
 				pbar_width += increment;
-				p_progress.animate({ width : pbar_width + "%" }, 1000, "linear", function() {
+				p_progress.animate({ width : pbar_width + "%" }, 250, "linear", function() {
 					p_repo.text( val.name );
 				});
 				console.log("Now doing repository '" + val.name + "'." );
@@ -144,6 +145,7 @@ $(document).ready(function() {
 				table_html += "<tr>";
 				table_html += addField( "Repository Name" , repo_link );
 				table_html += addField( "Repository Description" , val.description );
+				table_html += addField( "Repository Language" , val.language );
 				table_html += addField( "Watchers" , val.watchers );
 				table_html += addField( "Forks" , val.forks );
 				table_html += addField( "Issues" , val.open_issues_count );
@@ -172,7 +174,7 @@ $(document).ready(function() {
 </script>
 
 	<hr />
-	
+
 <div class="row">
 	<div id="github_progress" class="twelve columns hidden">
 		<div class="radius progress" style="width:100%;">
@@ -192,7 +194,7 @@ $(document).ready(function() {
 	</div>
 </div>
 
-<div id="github_area" style="display:block;">
+<div id="github_area" style="display:none;">
 
 
 	<div class="row">
@@ -209,6 +211,7 @@ $(document).ready(function() {
 				<thead>
 					<th style="width: 175px;">Name</th>
 					<th>Description</th>
+					<th>Language</th>
 					<th>W</th>
 					<th>F</th>
 					<th>I</th>
