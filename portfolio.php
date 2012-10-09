@@ -65,7 +65,7 @@ include( 'includes/header.inc.php' ); ?>
 
 		
 		<ul class="button-group rounded port_open_info">
-			<li><a href="#" class="large success button">View on GitHub</a></li>
+			<li><a href="https://github.com/piercemoore/RubyPHP" class="large success button">View on GitHub</a></li>
 			<li><a href="#" data-reveal-id="portfolio_rubyphp" class="large button">Screenshots</a></li>
 		</ul>
 	</div>
@@ -83,7 +83,10 @@ include( 'includes/header.inc.php' ); ?>
 		<!-- <p class="heading">TickoMatic</p> -->
 		<p>I wrote a fun little application that provides users with a countdown timer and a serene image switching theme.</p>
 
-		<a href="#" data-reveal-id="portfolio_tickomatic" class="large button port_open_info">Screenshots</a>
+		<ul class="button-group rounded port_open_info">
+			<li><a href="https://github.com/piercemoore/TickOMatic" class="large success button">View on GitHub</a></li>
+			<li><a href="#" data-reveal-id="portfolio_tickomatic" class="large button">Screenshots</a></li>
+		</ul>
 	</div>
 </div>
 

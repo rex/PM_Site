@@ -104,23 +104,11 @@ body {
 	.radial_gradient( #EEE , #ddd );
 	min-height: 800px;
 }
-#hire_me {
-	position: fixed;
-	top: -1px;
-	right: -1px;
-	padding: 20px;
-	min-width: 150px;
-	min-height: 80px;
-	background: @col_dark;
-	.sh_box( 0 0 10px #222 inset );
-	h1 {
-		color: #ccc;
-		.f_header;
-		.sh_text( 0 2px 5px #222 , 0 -1px 1px #fff );
-	}
-	&:hover {
-		.sh_box( 0 3px 10px #222 , 0 1px 1px #eee inset );
-	}
+#hireme_modal {
+	.round;
+	background: #ddd;
+	border: 1px #fff solid;
+	.sh_box( 0 3 15px #000 );
 }
 .hidden {
 	display : none;

@@ -103,7 +103,7 @@ $(document).ready(function() {
 
 <!-- "Hire Me" Modal for all pages -->
 <div id="hireme_modal" class="reveal-modal large" style="display: none;">
-	<h1>I make a great team member.</h1>
+	<p class="heading">I make a great team member.</p>
 
 	<p class="subheading" style="line-height: 100%;">
 		I am currently looking for the next team that I will grow with, and I think that you should consider me for yours.
@@ -117,24 +117,24 @@ $(document).ready(function() {
 
 		<div class="nine columns">
 		 
-			<table style="width: 100%;">
+			<table>
 				<thead>
 					<th>Connect on LinkedIn</th>
-					<th>Download my vCard</th>
-					<th>Download my R&eacute;sum&eacute;</th>
+					<!-- <th>Download my vCard</th>
+					<th>Download my R&eacute;sum&eacute;</th> -->
 				</thead>
 
 				<tbody>
 					<tr>
 						<td><a href="http://www.linkedin.com/in/piercemoore" target="_blank" class="large radius button" alt="View my LinkedIn Profile" title="View my LinkedIn Profile" ><img src="<?=$images;?>/icons/linkedin.png" /></a></td>
-						<td><a href="<?=$assets;?>/PierceMoore.vcf" target="_blank" class="large radius button" alt="Download my vCard" title="Download my vCard" ><img src="<?=$images;?>/icons/vcard.png" /></a></td>
-						<td><a href="<?=$assets;?>/PierceMoore.pdf" target="_blank" class="large radius button" alt="Download my R&eacute;sum&eacute;" title="Download my R&eacute;sum&eacute;" ><img src="<?=$images;?>/icons/resume.png" /></a></td>
+						<!-- <td><a href="#" target="_blank" class="large radius button disabled" alt="Download my vCard" title="Download my vCard" ><img src="<?=$images;?>/icons/vcard.png" /></a></td> -->
+						<!-- <td><a href="#" target="_blank" class="large radius button disabled" alt="Download my R&eacute;sum&eacute;" title="Download my R&eacute;sum&eacute;" ><img src="<?=$images;?>/icons/resume.png" /></a></td> -->
 					</tr>
 				</tbody>
 			</table>
 
 
-			<p class="subheading">If you leave me your email address, I'll contact you immediately.</p>
+			<!-- <p class="subheading">If you leave me your email address, I'll contact you immediately.</p>
 			<div class="row collapse">
 				<div class="ten columns">
 					<input type="text" id="hireme_contact_email" placeholder="Your Email Address..." />
@@ -142,7 +142,7 @@ $(document).ready(function() {
 				<div class="two columns">
 					<a href="#" id="hireme_contact_submit" class="postfix button" style="padding-left: 20px;padding-right: 20px;">Connect</a>
 				</div>
-			</div>
+			</div> -->
 		</div>
 	</div>
 	
