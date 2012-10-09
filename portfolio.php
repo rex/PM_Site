@@ -112,7 +112,7 @@ $(window).load( function() {
 </script>
 
 <!-- Below are the modal dialogs -->
-<div id="portfolio_cms" class="hidden reveal-modal expand">
+<div id="portfolio_cms" class="hidden reveal-modal medium">
 	<p class="big_white">Custom CMS</p>
 	<div id="slider_cms" class="slider">
 		<img src="<?=$images;?>/portfolio/cms_1.png" />
@@ -143,7 +143,7 @@ $(window).load( function() {
 	</div>
 </div>
 
-<div id="portfolio_rubyphp" class="hidden reveal-modal expand">
+<div id="portfolio_rubyphp" class="hidden reveal-modal large">
 	<p class="big_white">RubyPHP</p>
 	<div id="slider_rubyphp" class="slider">
 		<img src="<?=$images;?>/portfolio/rubyphp_info.png" />
@@ -151,7 +151,7 @@ $(window).load( function() {
 	</div>
 </div>
 
-<div id="portfolio_tickomatic" class="hidden reveal-modal expand">
+<div id="portfolio_tickomatic" class="hidden reveal-modal large">
 	<p class="big_white">Tickomatic</p>
 	<div id="slider_tickomatic" class="slider">
 		<img src="<?=$images;?>/portfolio/tickomatic_1.png" />

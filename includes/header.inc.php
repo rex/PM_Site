@@ -103,7 +103,7 @@ $(document).ready(function() {
 </script>
 
 <!-- "Hire Me" Modal for all pages -->
-<div id="hireme_modal" class="reveal-modal large" style="display: none;">
+<div id="hireme_modal" class="reveal-modal medium" style="display: none;">
 	<p class="heading">I make a great team member.</p>
 
 	<p class="subheading" style="line-height: 100%;">
