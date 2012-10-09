@@ -21,6 +21,7 @@ $page = strtolower( str_replace( "/PM_Site/" , "" , $_SERVER['REQUEST_URI'] ) );
 
 	<title><?=$title;?> :: Pierce Moore</title>
 
+	<link rel="shortcut icon" href="<?=$images;?>/favicon.ico" />
 	<link rel="stylesheet" href="assets/css/foundation.min.css">
 	<!-- <link rel="stylesheet" href="assets/css/style.css" type="text/css"> -->
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,700|Oxygen+Mono|Source+Sans+Pro:900|Open+Sans+Condensed:300|Josefin+Slab:300,700' rel='stylesheet' type='text/css'>
@@ -44,7 +45,7 @@ function track( category , item , meta ) {
 </head>
 <body>
 
-<a href="https://www.github.com/piercemoore" target="_blank" class="forkme_link"><img src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub!" title="Fork me on GitHub!" /></a>
+<a href="https://www.github.com/piercemoore" target="_blank" class="forkme_link"><img src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" style="width: 110px;height:110px;" alt="Fork me on GitHub!" title="Fork me on GitHub!" /></a>
 
 <!-- <a href="<?=$url;?>/resume" id="hire_me">
 	<h1>Hire Me!</h1>
