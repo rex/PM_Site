@@ -140,8 +140,9 @@ $(window).load( function() {
 <div id="portfolio_tickomatic" class="hidden reveal-modal large">
 	<p class="big_white">Tickomatic</p>
 	<div id="slider_tickomatic" class="slider">
-		<img src="<?=$images;?>/portfolio/rubyphp_info.png" />
-		<img src="<?=$images;?>/portfolio/rubyphp_code.png" />
+		<img src="<?=$images;?>/portfolio/tickomatic_1.png" />
+		<img src="<?=$images;?>/portfolio/tickomatic_2.png" />
+		<img src="<?=$images;?>/portfolio/tickomatic_3.png" />
 	</div>
 </div>
 <?php include( 'includes/footer.inc.php' ); ?>
