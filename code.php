@@ -108,6 +108,11 @@ $(document).ready(function() {
 	var p_action = $("#processing_action");
 	var p_progress = $("#processing_progress");
 	var p_header = $("#processing_header");
+	var gh_gravatar_img = $("#my_gravatar_gh");
+	var gh_gravatar_a = $("#my_gravatar_link");
+	var gh_name = "";
+	var gh_link = "";
+	var gh_grav = "";
 
 	function addField( name , value ) {
 		p_action.text( name );
@@ -116,17 +121,25 @@ $(document).ready(function() {
 
 	$("#github_show").click( function() {
 		var table_html = "";
+		var pbar_width = 0;
 
 		$(this).addClass("disabled").slideUp("fast");
 		progress.slideDown("fast").removeClass("hidden");
 		p_header.text("FETCHING...");
-		p_progress.animate({width:"5%"}, 250 );
+		pbar_width += 5;
+		p_progress.animate({width: pbar_width + "%"}, 250 );
 
 		$.getJSON("https://api.github.com/users/piercemoore/repos?", function( data ) {
-			p_progress.animate({width:"10%"}, 250 );
+			pbar_width += 5;
+			p_progress.animate({width: pbar_width + "%" }, 250 );
 			p_header.text("PROCESSING...");
+			var increment = 80 / parseInt( data.length );
 			$.each( data , function( key , val ) {
-				p_repo.text( val.name );
+				pbar_width += increment;
+				p_progress.animate({ width : pbar_width + "%" }, 1000, "linear", function() {
+					p_repo.text( val.name );
+				});
+				console.log("Now doing repository '" + val.name + "'." );
 				var repo_link = '<a class="small radius button f_general" style="font-weight: 700;" href="' + val.html_url + '" target="_blank" alt="Open \"' + val.name + '\" on GitHub" title="Open \"' + val.name + '\" on GitHub">' + val.name + '</a>';
 				table_html += "<tr>";
 				table_html += addField( "Repository Name" , repo_link );
@@ -135,16 +148,31 @@ $(document).ready(function() {
 				table_html += addField( "Forks" , val.forks );
 				table_html += addField( "Issues" , val.open_issues_count );
 				table_html += "</tr>";
+				gh_gravatar_img.attr({
+					src : val.owner.avatar_url,
+					alt : "See " + val.owner.login + " on GitHub",
+					title : "See " + val.owner.login + " on GitHub"
+				});
+				gh_gravatar_a.attr({
+					href : "https://www.github.com/user/" + val.owner.login,
+					alt : "See " + val.owner.login + " on GitHub",
+					title : "See " + val.owner.login + " on GitHub"
+				});
 			});
 			gh_table.append( table_html );
-			progress.slideUp("fast");
-			gh_list.slideDown("fast");
+			p_progress.animate({ width : "100%" }, 100, "linear", function() {
+				progress.slideUp("fast");
+				gh_list.slideDown("fast");
+			});
 		});
 
 	});
 
 });
 </script>
+
+	<hr />
+	
 <div class="row">
 	<div id="github_progress" class="twelve columns hidden">
 		<div class="radius progress" style="width:100%;">
@@ -164,18 +192,30 @@ $(document).ready(function() {
 	</div>
 </div>
 
-<div class="row">
-	<div class="twelve columns" style="display:none;" id="github_area">
-		<table id="github_repos_table">
-			<thead>
-				<th>Name</th>
-				<th>Description</th>
-				<th>W</th>
-				<th>F</th>
-				<th>I</th>
-			</thead>
-			<tbody></tbody>
-		</table>
+<div id="github_area" style="display:block;">
+
+
+	<div class="row">
+		<div class="four columns">
+			<a href="" class="th" id="my_gravatar_link"><img src="" id="my_gravatar_gh" alt="" title="" /></a>
+		</div>
+		<div class="eight columns">
+			<p class="heading">Here are all my public GitHub repos.</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="twelve columns">
+			<table id="github_repos_table">
+				<thead>
+					<th style="width: 175px;">Name</th>
+					<th>Description</th>
+					<th>W</th>
+					<th>F</th>
+					<th>I</th>
+				</thead>
+				<tbody></tbody>
+			</table>
+		</div>
 	</div>
 </div>
 
