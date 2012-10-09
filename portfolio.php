@@ -19,14 +19,14 @@ include( 'includes/header.inc.php' ); ?>
 
 <div class="row">
 	<div class="five columns">
-		<a class="th">
-			<img src="<?=$images;?>/icons/placeholder_350x200.jpg" alt="Placeholder" title="Placeholder" />
+		<a class="th" data-reveal-id="portfolio_cms">
+			<img src="<?=$images;?>/portfolio/cms_1.png" alt="Custom CMS" title="Custom CMS" style="width: 350px;height: 200px;" />
 			<div class="port_caption"><p class="heading">cms</p></div>
 		</a>
 	</div>
 	<div class="seven columns portfolio_listing">
 		<!-- <p class="heading">CMS Project</p> -->
-		<p>Built a fully-featured CMS from scratch, complete with tiered user levels, messaging, notifications, and a javascript-based page building platform.</p>
+		<p>Built a fully-featured CMS from scratch, complete with tiered user authorization levels, messaging, notifications, and a javascript-based page building platform.</p>
 
 		<a href="#" data-reveal-id="portfolio_cms" class="large button port_open_info">Screenshots</a>
 	</div>
@@ -35,8 +35,8 @@ include( 'includes/header.inc.php' ); ?>
 <div class="row">
 	<hr />
 	<div class="five columns">
-		<a class="th">
-			<img src="<?=$images;?>/icons/placeholder_350x200.jpg" alt="Placeholder" title="Placeholder" />
+		<a class="th" data-reveal-id="portfolio_bantp">
+			<img src="<?=$images;?>/portfolio/bantp_1.jpg" alt="Bad Ass New Tab Page" title="Bad Ass New Tab Page" style="width: 350px;height: 200px;" />
 			<div class="port_caption"><p class="heading">bantp</p></div>
 		</a>
 	</div>
@@ -54,8 +54,8 @@ include( 'includes/header.inc.php' ); ?>
 <div class="row">
 	<hr />
 	<div class="five columns">
-		<a class="th">
-			<img src="<?=$images;?>/icons/placeholder_350x200.jpg" alt="Placeholder" title="Placeholder" />
+		<a class="th" data-reveal-id="portfolio_rubyphp">
+			<img src="<?=$images;?>/portfolio/rubyphp_code.png" alt="RubyPHP" title="RubyPHP" style="width: 350px;height: 200px;" />
 			<div class="port_caption"><p class="heading">rubyphp</p></div>
 		</a>
 	</div>
@@ -74,8 +74,8 @@ include( 'includes/header.inc.php' ); ?>
 <div class="row">
 	<hr />
 	<div class="five columns">
-		<a class="th">
-			<img src="<?=$images;?>/icons/placeholder_350x200.jpg" alt="Placeholder" title="Placeholder" />
+		<a class="th" data-reveal-id="portfolio_tickomatic">
+			<img src="<?=$images;?>/portfolio/tickomatic_4.png" alt="Tickomatic" title="Tickomatic" style="width: 350px;height: 200px;" />
 			<div class="port_caption"><p class="heading">tickomatic</p></div>
 		</a>
 	</div>
@@ -91,7 +91,7 @@ include( 'includes/header.inc.php' ); ?>
 $(window).load( function() {
 	$("#slider_cms").orbit({
 		animation : "fade",
-		animationSpeed : 800
+		animationSpeed : 400
 	});
 	$("#slider_bantp").orbit({
 		animation : "fade",
@@ -99,7 +99,7 @@ $(window).load( function() {
 	});
 	$("#slider_rubyphp").orbit({
 		animation : "fade",
-		animationSpeed : 800
+		animationSpeed : 400
 	});
 	$("#slider_tickomatic").orbit({
 		animation : "fade",
@@ -109,13 +109,24 @@ $(window).load( function() {
 </script>
 
 <!-- Below are the modal dialogs -->
-<div id="portfolio_cms" class="hidden reveal-modal large">
+<div id="portfolio_cms" class="hidden reveal-modal expand">
 	<p class="big_white">Custom CMS</p>
 	<div id="slider_cms" class="slider">
-		<img src="<?=$images;?>/portfolio/bantp_1.jpg" />
-		<img src="<?=$images;?>/portfolio/bantp_2.jpg" />
-		<img src="<?=$images;?>/portfolio/bantp_3.jpg" />
-		<img src="<?=$images;?>/portfolio/bantp_4.jpg" />
+		<img src="<?=$images;?>/portfolio/cms_1.png" />
+		<img src="<?=$images;?>/portfolio/cms_2.png" />
+		<img src="<?=$images;?>/portfolio/cms_3.png" />
+		<img src="<?=$images;?>/portfolio/cms_4.png" />
+		<img src="<?=$images;?>/portfolio/cms_5.png" />
+		<img src="<?=$images;?>/portfolio/cms_6.png" />
+		<img src="<?=$images;?>/portfolio/cms_7.png" />
+		<img src="<?=$images;?>/portfolio/cms_8.png" />
+		<img src="<?=$images;?>/portfolio/cms_9.png" />
+		<img src="<?=$images;?>/portfolio/cms_10.png" />
+		<img src="<?=$images;?>/portfolio/cms_11.png" />
+		<img src="<?=$images;?>/portfolio/cms_12.png" />
+		<img src="<?=$images;?>/portfolio/cms_13.png" />
+		<img src="<?=$images;?>/portfolio/cms_14.png" />
+		<img src="<?=$images;?>/portfolio/cms_15.png" />
 	</div>
 </div>
 
@@ -129,7 +140,7 @@ $(window).load( function() {
 	</div>
 </div>
 
-<div id="portfolio_rubyphp" class="hidden reveal-modal large">
+<div id="portfolio_rubyphp" class="hidden reveal-modal expand">
 	<p class="big_white">RubyPHP</p>
 	<div id="slider_rubyphp" class="slider">
 		<img src="<?=$images;?>/portfolio/rubyphp_info.png" />
@@ -137,7 +148,7 @@ $(window).load( function() {
 	</div>
 </div>
 
-<div id="portfolio_tickomatic" class="hidden reveal-modal large">
+<div id="portfolio_tickomatic" class="hidden reveal-modal expand">
 	<p class="big_white">Tickomatic</p>
 	<div id="slider_tickomatic" class="slider">
 		<img src="<?=$images;?>/portfolio/tickomatic_1.png" />
