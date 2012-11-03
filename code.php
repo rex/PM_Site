@@ -36,6 +36,8 @@ $snips->add( "Function Recursion within a Class / Object" , "Recursion in a Clas
 $snips->add( "Unlimited / Variable Number Function Arguments" , "Variable Function Arguments" , "php" , "https://gist.github.com/2253239.js?file=gistfile1.aw" );
 $snips->add( "Keep the Footer at the Bottom of the Page with jQuery" , "jQuery Footer Placement" , "js" , "https://gist.github.com/1969584.js?file=placefooter.jquery.js" );
 $snips->add( "Add and Loop Through All Snippets on this Page" , "This Page's Snippet Loop" , "php" , "https://gist.github.com/3825556.js?file=pm_codepage.php" );
+$snips->add( "Recurse through an object and display formatted contents" , "Formatted Object Recursion Display" , "php" , "https://gist.github.com/4005418.js?file=zngine_feedback.php" );
+$snips->add( "Mongoose Schema to store GitHub Issues" , "Mongoose Schema - GitHub Issues" , "js" , "https://gist.github.com/4005413.js?file=feedback.js" );
 
 ?>
 
