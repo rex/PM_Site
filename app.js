@@ -1,18 +1,27 @@
-var express = require('express');
-var app = express();
-var routes = require('./routes.js');
+var express = require('express')
+	, app = express()
+	, routes = require('./routes/index.js')
+	, config = require('./config')
+	;
 
 // Configuring server
 console.log("Configuring Node.js server for PierceMoore.com...");
 
-app.set('views', __dirname + '/views' );
-app.use(express.static( __dirname + '/../public' ) );
+app.configure( function() {
+	// Configure
+	app.set('port', config.port );
+	app.set('views', __dirname + '/views' );
+
+	// Set middleware
+	app.use( express.favicon() );
+	app.use( express.bodyParser() );
+	app.use( app.router );
+	app.use( express.static( __dirname + '/../public' ) );
+});
 
 // Define all pages and routes
-console.log("Defining routes for PierceMoore.com...");
+routes.define(app);
 
-app.get("/links", routes.links );
-app.get("/", routes.home );
-
-app.listen(1965);
-console.log("PierceMoore.com is listening on port 1965!");
+app.listen( app.get('port'), function() {
+	console.log("PierceMoore.com is up and running on port " + app.get('port') );
+});
