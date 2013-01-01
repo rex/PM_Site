@@ -1,0 +1,20 @@
+!!!
+html(lang='en')
+	head
+		title #{title}
+
+		block scripts
+			script(src='/js/jquery.js')
+
+		block styles
+			link(rel='stylesheet',href='/css/style.css')
+
+	body
+		h1 #{title}
+		
+		block content
+			p #{content}
+
+		block footer
+			footer
+				p This is a footer.

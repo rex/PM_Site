@@ -1,5 +1,6 @@
 var express = require('express')
 	, app = express()
+	, models = require('./models')
 	, routes = require('./routes/index.js')
 	, config = require('./config')
 	;
@@ -11,12 +12,15 @@ app.configure( function() {
 	// Configure
 	app.set('port', config.port );
 	app.set('views', __dirname + '/views' );
+	app.set('view engine', config.view_engine );
+	app.set('view options', config.view_options );
 
 	// Set middleware
 	app.use( express.favicon() );
 	app.use( express.bodyParser() );
+	app.use( express.logger('dev') );
 	app.use( app.router );
-	app.use( express.static( __dirname + '/../public' ) );
+	app.use( express.static( './public' ) );
 });
 
 // Define all pages and routes

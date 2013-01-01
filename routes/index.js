@@ -1,5 +1,6 @@
 var pages = require("./pages")
 	, blog = require("./blog")
+	, shortlink = require("./shortlink")
 	;
 
 var define = function ( app ) {
@@ -16,6 +17,9 @@ var define = function ( app ) {
 	// Blog namespaces
 	app.get("/blog/:id", blog.fetchArticle );
 	app.get("/blog", blog.build );
+
+	// URL Shortener links are our last line of defense
+	app.get("/:id", shortlink.fetch );
 	app.get("/", pages.home );
 }
 
